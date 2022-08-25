@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "env": {
+    "es2022": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-typescript/base", // for typescript
+    "airbnb-base",
+    "plugin:@typescript-eslint/recommended", // for typescript
+    "plugin:import/recommended",
+    "plugin:prettier/recommended",
+    "prettier" // when use prettier with eslint(eslint-config-prettier dependencies)
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "prettier", "import"],
+  "rules": {
+    "import/extensions": "off",
+    "no-console": "warn",
+    "no-plusplus": "off"
+  },
+  "ignorePatterns": ["*config.js"]
+}
