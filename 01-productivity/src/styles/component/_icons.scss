@@ -20,7 +20,7 @@
 	}
 
 	&:hover {
-		box-shadow: 0 1rem 5rem rgba($color-shadow, 0.8);
+		box-shadow: 0 1rem 5rem rgba($color-shadow, 100%);
 	}
 }
 
@@ -60,4 +60,38 @@
 
 .icon--audi {
 	@include icon-modification(12rem, 3rem, "../assets/icons/customers/", "audi.svg", "audi-hover.svg");
+}
+
+// Features
+.icon--feature {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 6.9rem;
+	height: 6.9rem;
+	background-color: #F1F5FF;
+	border: 0.2rem solid #F1F5FF;
+	border-radius: 50%;
+	cursor: default;
+	transition: border-color $transition-duration;
+
+	&:hover {
+		border: 0.2rem solid $color-primary;
+	}
+}
+
+.icon--overview {
+	@include icon-modification(2rem, 2.4rem, "../assets/icons/features/", "overview.svg");
+}
+
+.icon--files {
+	@include icon-modification(3rem, 2rem, "../assets/icons/features/", "files.svg");
+}
+
+.icon--meeting-chats {
+	@include icon-modification(2.2rem, 2rem, "../assets/icons/features/", "meeting-chats.svg");
+}
+
+.icon--save-events {
+	@include icon-modification(2.1rem, 1.9rem, "../assets/icons/features/", "save-events.svg");
 }

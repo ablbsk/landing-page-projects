@@ -22,6 +22,16 @@
 	}
 }
 
+.button--warning {
+	color: #D43F3F;
+	background-color: #FFD7D7;
+	border-color: #FFD7D7;
+
+	&:hover {
+		background-color: darken(#FFD7D7, $color-darken-percent);
+	}
+}
+
 .button--transparent {
 	color: #ADB4D2;
 	background-color: $color-background-accent;

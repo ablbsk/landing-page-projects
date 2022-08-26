@@ -344,6 +344,15 @@ template {
   background-color: #548aff;
 }
 
+.button--warning {
+  color: #D43F3F;
+  background-color: #FFD7D7;
+  border-color: #FFD7D7;
+}
+.button--warning:hover {
+  background-color: #ffbebe;
+}
+
 .button--transparent {
   color: #ADB4D2;
   background-color: #F5F8FF;
@@ -387,10 +396,6 @@ template {
   background-color: #456dfe;
 }
 
-.header--accent-weight {
-  font-weight: 500;
-}
-
 .header-1-level {
   font-family: "Quicksand", sans-serif;
   font-size: 4.8rem;
@@ -407,6 +412,14 @@ template {
   color: #3D4F9F;
 }
 
+.header-3-level {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3rem;
+  color: #3D4F9F;
+}
+
 .header-5-level {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -414,6 +427,23 @@ template {
   line-height: 1.2rem;
   text-transform: uppercase;
   color: #3D4F9F;
+}
+
+.header-6-level {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: #5E81FE;
+  margin: 3rem 0;
+}
+
+.header--accent-weight {
+  font-weight: 500;
+}
+
+.header--center {
+  text-align: center;
 }
 
 .icon {
@@ -443,7 +473,7 @@ template {
   background-image: url("../assets/icons/play.svg");
 }
 .icon--round:hover {
-  box-shadow: 0 1rem 5rem rgba(201, 209, 231, 0.8);
+  box-shadow: 0 1rem 5rem #c9d1e7;
 }
 
 .icon--facebook {
@@ -536,6 +566,62 @@ template {
   background-image: url("../assets/icons/customers/audi-hover.svg");
 }
 
+.icon--feature {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.9rem;
+  height: 6.9rem;
+  background-color: #F1F5FF;
+  border: 0.2rem solid #F1F5FF;
+  border-radius: 50%;
+  cursor: default;
+  transition: border-color 0.3s;
+}
+.icon--feature:hover {
+  border: 0.2rem solid #5E81FE;
+}
+
+.icon--overview {
+  width: 2rem;
+  height: 2.4rem;
+  background-image: url("../assets/icons/features/overview.svg");
+  transition: 0.3s;
+}
+.icon--overview:hover {
+  background-image: url("../assets/icons/features/overview.svg");
+}
+
+.icon--files {
+  width: 3rem;
+  height: 2rem;
+  background-image: url("../assets/icons/features/files.svg");
+  transition: 0.3s;
+}
+.icon--files:hover {
+  background-image: url("../assets/icons/features/files.svg");
+}
+
+.icon--meeting-chats {
+  width: 2.2rem;
+  height: 2rem;
+  background-image: url("../assets/icons/features/meeting-chats.svg");
+  transition: 0.3s;
+}
+.icon--meeting-chats:hover {
+  background-image: url("../assets/icons/features/meeting-chats.svg");
+}
+
+.icon--save-events {
+  width: 2.1rem;
+  height: 1.9rem;
+  background-image: url("../assets/icons/features/save-events.svg");
+  transition: 0.3s;
+}
+.icon--save-events:hover {
+  background-image: url("../assets/icons/features/save-events.svg");
+}
+
 .navigation__list {
   display: flex;
   margin-left: 7rem;
@@ -569,6 +655,73 @@ template {
 
 .social__item + .social__item {
   margin-left: 3.5rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 17rem 0;
+  border-bottom: 0.1rem solid #D8E3FE;
+  background-color: #FFFFFF;
+  background-image: url("../assets/images/features.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features__header {
+  margin: 2rem 0 9rem 0;
+}
+
+.features__container {
+  display: flex;
+}
+
+.features__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 9rem;
+}
+
+.features__buttons-or {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin: 0 2rem;
+  width: 8rem;
+  text-align: center;
+  color: #DFE2EF;
+}
+
+.features__buttons-text {
+  padding: 0 1rem;
+  position: relative;
+  top: 1.6rem;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+}
+
+.features__buttons-line {
+  border: none;
+  height: 0.1rem;
+  background-color: #DFE2EF;
+}
+
+.feature {
+  width: 14rem;
+  margin: 0 3.3rem;
+  text-align: center;
+}
+
+.features__column {
+  display: flex;
+}
+
+.feature__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 177%;
 }
 
 .customers {

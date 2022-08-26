@@ -1,0 +1,62 @@
+.features {
+	display: flex;
+	justify-content: center;
+	padding: 17rem 0;
+	border-bottom: $border;
+	background-color: $color-background;
+	background-image: url("../assets/images/features.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.features__header {
+	margin: 2rem 0 9rem 0;
+}
+
+.features__container {
+	display: flex;
+}
+
+// Features Buttons Container
+.features__buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 9rem;
+}
+
+.features__buttons-or {
+	@include font($font-family-regular, $font-size-s, 1.8rem, $font-weight-regular);
+	margin: 0 2rem;
+	width: 8rem;
+	text-align: center;
+	color: #DFE2EF;
+}
+
+.features__buttons-text {
+	padding: 0 1rem;
+	position: relative;
+	top: 1.6rem;
+	text-transform: uppercase;
+	background-color: $color-background;
+}
+
+.features__buttons-line {
+	border: none;
+	height: 0.1rem;
+	background-color: #DFE2EF;
+}
+
+// Feature
+.feature {
+	width: 14rem;
+	margin: 0 3.3rem;
+	text-align: center;
+}
+
+.features__column {
+	display: flex;
+}
+
+.feature__description {
+	@include font($font-family-regular, $font-size-s, 177%, $font-weight-regular);
+}
