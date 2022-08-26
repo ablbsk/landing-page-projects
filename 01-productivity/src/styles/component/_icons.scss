@@ -4,14 +4,17 @@
 }
 
 .icon--round {
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 50%;
+}
+
+.icon--promo-play {
 	width: 5rem;
 	height: 5rem;
 	margin: 2rem auto;
 	background-color: $color-button-background-light;
-	border-radius: 50%;
 	box-shadow: 0 1rem 5rem rgba($color-shadow, 0.6);
 	transition: box-shadow $transition-duration;
 

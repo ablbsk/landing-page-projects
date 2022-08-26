@@ -452,27 +452,30 @@ template {
 }
 
 .icon--round {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+}
+
+.icon--promo-play {
   width: 5rem;
   height: 5rem;
   margin: 2rem auto;
   background-color: #FFFFFF;
-  border-radius: 50%;
   box-shadow: 0 1rem 5rem rgba(201, 209, 231, 0.6);
   transition: box-shadow 0.3s;
 }
-.icon--round > .icon--play {
+.icon--promo-play > .icon--play {
   width: 1rem;
   height: 1.1rem;
   background-image: url("../assets/icons/play.svg");
   transition: 0.3s;
 }
-.icon--round > .icon--play:hover {
+.icon--promo-play > .icon--play:hover {
   background-image: url("../assets/icons/play.svg");
 }
-.icon--round:hover {
+.icon--promo-play:hover {
   box-shadow: 0 1rem 5rem #c9d1e7;
 }
 
