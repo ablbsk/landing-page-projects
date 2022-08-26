@@ -1,0 +1,63 @@
+.icon {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.icon--round {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	margin: 2rem auto;
+	background-color: $color-button-background-light;
+	border-radius: 50%;
+	box-shadow: 0 1rem 5rem rgba($color-shadow, 0.6);
+	transition: box-shadow $transition-duration;
+
+	>.icon--play {
+		@include icon-modification(1rem, 1.1rem, "../assets/icons/", "play.svg");
+	}
+
+	&:hover {
+		box-shadow: 0 1rem 5rem rgba($color-shadow, 0.8);
+	}
+}
+
+// Socials
+.icon--facebook {
+	@include icon-modification(1rem, 1.8rem, "../assets/icons/socials/", "facebook.svg", "facebook-hover.svg");
+}
+
+.icon--telegram {
+	@include icon-modification(1.8rem, 1.4rem, "../assets/icons/socials/", "telegram.svg", "telegram-hover.svg");
+}
+
+.icon--twitter {
+	@include icon-modification(1.8rem, 1.4rem, "../assets/icons/socials/", "twitter.svg", "twitter-hover.svg");
+}
+
+.icon--medium {
+	@include icon-modification(1.8rem, 1.4rem, "../assets/icons/socials/", "medium.svg", "medium-hover.svg");
+}
+
+// Customers
+.icon--bitbucket {
+	@include icon-modification(13rem, 3rem, "../assets/icons/customers/", "bitbucket.svg", "bitbucket-hover.svg");
+}
+
+.icon--apple-watch {
+	@include icon-modification(12rem, 2.5rem, "../assets/icons/customers/", "apple-watch.svg", "apple-watch-hover.svg");
+}
+
+.icon--facebook-customers {
+	@include icon-modification(12rem, 2.5rem, "../assets/icons/customers/", "facebook-customers.svg", "facebook-customers-hover.svg");
+}
+
+.icon--atlassian {
+	@include icon-modification(12rem, 2.5rem, "../assets/icons/customers/", "atlassian.svg", "atlassian-hover.svg");
+}
+
+.icon--audi {
+	@include icon-modification(12rem, 3rem, "../assets/icons/customers/", "audi.svg", "audi-hover.svg");
+}

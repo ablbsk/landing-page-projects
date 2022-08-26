@@ -1,0 +1,26 @@
+.dots {
+	display: flex;
+	justify-content: center;
+}
+
+.dot {
+	width: 0.8rem;
+	height: 0.8rem;
+	margin: 0 0.5rem;
+	background-color: $color-dot;
+	border-radius: 50%;
+	transition: background-color $transition-duration;
+	cursor: pointer;
+
+	&:hover {
+		background-color: darken($color-dot, $color-darken-percent);
+	}
+}
+
+.dot--active {
+	background-color: $color-primary;
+
+	&:hover {
+		background-color: darken($color-primary, $color-darken-percent);
+	}
+}

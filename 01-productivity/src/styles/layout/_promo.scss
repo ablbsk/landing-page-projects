@@ -1,0 +1,33 @@
+.promo {
+	display: flex;
+	flex-direction: column;
+	height: 57rem;
+	padding-top: 9rem;
+	border-bottom: $border;
+	background-color: $color-background-accent;
+	background-image: url("../assets/images/promo.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+}
+
+.promo__content {
+	max-width: 60rem;
+	margin: 0 auto;
+	text-align: center;
+
+	>.header-5-level {
+		padding-bottom: 1.6rem;
+	}
+}
+
+.promo__list {
+	@include font($font-family-regular, $font-size-l, 190%, $font-weight-light);
+	margin: 2.8rem 2rem 2rem 2rem;
+	color: $color-text;
+}
+
+.promo__dots {
+	margin-top: auto;
+	margin-bottom: 4rem;
+}

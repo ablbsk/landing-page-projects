@@ -1,0 +1,14 @@
+.header--accent-weight {
+	font-weight: $font-weight-medium;
+}
+
+.header-1-level {
+	@include font($font-family-primary, $font-size-3xl, 6rem, $font-weight-light);
+	color: $color-heading;
+}
+
+.header-5-level {
+	@include font($font-family-regular, $font-size-xs, 1.2rem, $font-weight-medium);
+	text-transform: uppercase;
+	color: $color-heading;
+}

@@ -1,0 +1,14 @@
+.socials {
+	margin: 0 4.5rem 0 auto;
+}
+
+.social__list {
+	display: flex;
+	align-items: center;
+}
+
+.social__item {
+	& + & {
+		margin-left: 3.5rem;
+	}
+}

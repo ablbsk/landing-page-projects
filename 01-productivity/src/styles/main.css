@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -43,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 ul, ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 /* Grouping content
@@ -315,6 +317,291 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.button {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  padding: 1.4rem 1.8rem;
+  color: #3A79FF;
+  background-color: #D2E1FF;
+  border: 0.1rem solid #D8E3FE;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #b9d0ff;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 0.5rem;
+  background-color: #D1D6E3;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.dot:hover {
+  background-color: #c1c8d9;
+}
+
+.dot--active {
+  background-color: #5E81FE;
+}
+.dot--active:hover {
+  background-color: #456dfe;
+}
+
+.header--accent-weight {
+  font-weight: 500;
+}
+
+.header-1-level {
+  font-family: "Quicksand", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 300;
+  line-height: 6rem;
+  color: #3D4F9F;
+}
+
+.header-5-level {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  color: #3D4F9F;
+}
+
+.icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon--round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem auto;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 1rem 5rem rgba(201, 209, 231, 0.6);
+  transition: box-shadow 0.3s;
+}
+.icon--round > .icon--play {
+  width: 1rem;
+  height: 1.1rem;
+  background-image: url("../assets/icons/play.svg");
+  transition: 0.3s;
+}
+.icon--round > .icon--play:hover {
+  background-image: url("../assets/icons/play.svg");
+}
+.icon--round:hover {
+  box-shadow: 0 1rem 5rem rgba(201, 209, 231, 0.8);
+}
+
+.icon--facebook {
+  width: 1rem;
+  height: 1.8rem;
+  background-image: url("../assets/icons/socials/facebook.svg");
+  transition: 0.3s;
+}
+.icon--facebook:hover {
+  background-image: url("../assets/icons/socials/facebook-hover.svg");
+}
+
+.icon--telegram {
+  width: 1.8rem;
+  height: 1.4rem;
+  background-image: url("../assets/icons/socials/telegram.svg");
+  transition: 0.3s;
+}
+.icon--telegram:hover {
+  background-image: url("../assets/icons/socials/telegram-hover.svg");
+}
+
+.icon--twitter {
+  width: 1.8rem;
+  height: 1.4rem;
+  background-image: url("../assets/icons/socials/twitter.svg");
+  transition: 0.3s;
+}
+.icon--twitter:hover {
+  background-image: url("../assets/icons/socials/twitter-hover.svg");
+}
+
+.icon--medium {
+  width: 1.8rem;
+  height: 1.4rem;
+  background-image: url("../assets/icons/socials/medium.svg");
+  transition: 0.3s;
+}
+.icon--medium:hover {
+  background-image: url("../assets/icons/socials/medium-hover.svg");
+}
+
+.icon--bitbucket {
+  width: 13rem;
+  height: 3rem;
+  background-image: url("../assets/icons/customers/bitbucket.svg");
+  transition: 0.3s;
+}
+.icon--bitbucket:hover {
+  background-image: url("../assets/icons/customers/bitbucket-hover.svg");
+}
+
+.icon--apple-watch {
+  width: 12rem;
+  height: 2.5rem;
+  background-image: url("../assets/icons/customers/apple-watch.svg");
+  transition: 0.3s;
+}
+.icon--apple-watch:hover {
+  background-image: url("../assets/icons/customers/apple-watch-hover.svg");
+}
+
+.icon--facebook-customers {
+  width: 12rem;
+  height: 2.5rem;
+  background-image: url("../assets/icons/customers/facebook-customers.svg");
+  transition: 0.3s;
+}
+.icon--facebook-customers:hover {
+  background-image: url("../assets/icons/customers/facebook-customers-hover.svg");
+}
+
+.icon--atlassian {
+  width: 12rem;
+  height: 2.5rem;
+  background-image: url("../assets/icons/customers/atlassian.svg");
+  transition: 0.3s;
+}
+.icon--atlassian:hover {
+  background-image: url("../assets/icons/customers/atlassian-hover.svg");
+}
+
+.icon--audi {
+  width: 12rem;
+  height: 3rem;
+  background-image: url("../assets/icons/customers/audi.svg");
+  transition: 0.3s;
+}
+.icon--audi:hover {
+  background-image: url("../assets/icons/customers/audi-hover.svg");
+}
+
+.navigation__list {
+  display: flex;
+  margin-left: 7rem;
+}
+
+.navigation__item + .navigation__item {
+  margin-left: 4rem;
+}
+
+.navigation__link {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #697CA6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.navigation__link:hover {
+  color: #5E81FE;
+}
+
+.socials {
+  margin: 0 4.5rem 0 auto;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+}
+
+.social__item + .social__item {
+  margin-left: 3.5rem;
+}
+
+.customers {
+  padding: 4rem 0;
+  border-bottom: 0.1rem solid #D8E3FE;
+}
+
+.customers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.customers__item {
+  margin: 2rem;
+}
+
+.header {
+  border-bottom: 0.1rem solid #D8E3FE;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  height: 57rem;
+  padding-top: 9rem;
+  border-bottom: 0.1rem solid #D8E3FE;
+  background-color: #F5F8FF;
+  background-image: url("../assets/images/promo.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.promo__content {
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.promo__content > .header-5-level {
+  padding-bottom: 1.6rem;
+}
+
+.promo__list {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 190%;
+  margin: 2.8rem 2rem 2rem 2rem;
+  color: #8D96BD;
+}
+
+.promo__dots {
+  margin-top: auto;
+  margin-bottom: 4rem;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

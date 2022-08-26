@@ -1,0 +1,17 @@
+@mixin font($family: $font-family-regular, $size, $height: $size, $weight: bold) {
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+}
+
+@mixin icon-modification($width, $height, $url, $name, $name-hover: $name) {
+	width: $width;
+	height: $height;
+	background-image: url($url + $name);
+	transition: $transition-duration;
+
+	&:hover {
+		background-image: url($url + $name-hover);
+	}
+}

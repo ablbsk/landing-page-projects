@@ -1,0 +1,14 @@
+.button {
+	@include font($font-family-primary, $font-size-m, 1.8rem, $font-weight-bold);
+	padding: 1.4rem 1.8rem;
+	color: $color-button-text;
+	background-color: $color-button-background;
+	border: $border;
+	border-radius: $border-radius;
+	cursor: pointer;
+	transition: background-color $transition-duration;
+
+	&:hover {
+		background-color: darken($color-button-background, $color-darken-percent);
+	}
+}
