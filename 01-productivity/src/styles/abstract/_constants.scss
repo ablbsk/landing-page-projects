@@ -1,4 +1,4 @@
-// Color
+// ========== Color ==========
 $color-primary: #5E81FE;
 $color-heading: #3D4F9F;
 $color-text: #8D96BD;
@@ -24,7 +24,7 @@ $color-lighten-percent: 5%;
 
 $color-shadow: #C9D1E7;
 
-// Font
+// ========== Font ==========
 $font-family-regular: 'Roboto', sans-serif;
 $font-family-primary: 'Quicksand', sans-serif;
 
@@ -41,12 +41,12 @@ $font-size-xl: 2.4rem;
 $font-size-2xl: 3.6rem;
 $font-size-3xl: 4.8rem;
 
-// Sizes
+// ========== Sizes ==========
 $content-width: 1440px;
 
-// Transition
+// ========== Transition ==========
 $transition-duration: 0.3s;
 
-// Border
+// ========== Border ==========
 $border: 0.1rem solid $color-border;
 $border-radius: 0.2rem;

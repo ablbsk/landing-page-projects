@@ -27,7 +27,7 @@
 	}
 }
 
-// Socials
+// ========== Socials ==========
 .icon--facebook {
 	@include icon-modification(1rem, 1.8rem, "../assets/icons/socials/", "facebook.svg", "facebook-hover.svg");
 }
@@ -44,7 +44,7 @@
 	@include icon-modification(1.8rem, 1.4rem, "../assets/icons/socials/", "medium.svg", "medium-hover.svg");
 }
 
-// Customers
+// ========== Customers ==========
 .icon--bitbucket {
 	@include icon-modification(13rem, 3rem, "../assets/icons/customers/", "bitbucket.svg", "bitbucket-hover.svg");
 }
@@ -65,7 +65,7 @@
 	@include icon-modification(12rem, 3rem, "../assets/icons/customers/", "audi.svg", "audi-hover.svg");
 }
 
-// Features
+// ========== Features ==========
 .icon--feature {
 	display: inline-flex;
 	justify-content: center;
