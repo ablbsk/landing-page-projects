@@ -16,15 +16,13 @@
 	margin: 0 auto;
 	text-align: center;
 
-	>.header-5-level {
-		padding-bottom: 1.6rem;
+	.promo__content-header {
+		margin-top: 1.6rem;
 	}
 }
 
 .promo__list {
-	@include font($font-family-regular, $font-size-l, 190%, $font-weight-light);
 	margin: 2.8rem 2rem 2rem 2rem;
-	color: $color-text;
 }
 
 .promo__dots {
