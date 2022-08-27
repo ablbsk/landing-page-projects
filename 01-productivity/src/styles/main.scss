@@ -12,12 +12,15 @@
 @import "component/dots";
 @import "component/header-levels";
 @import "component/icons";
+@import "component/links";
 @import "component/navigation";
+@import "component/slider";
 @import "component/socials";
 
 // ========== Layout ==========
-@import "layout/features";
+@import "layout/blog";
 @import "layout/customers";
+@import "layout/features";
 @import "layout/header";
 @import "layout/plan";
 @import "layout/promo";

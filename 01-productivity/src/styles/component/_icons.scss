@@ -112,3 +112,13 @@
 .icon--users {
 	@include icon-modification(7.5rem, 7rem, "../assets/icons/stats/", "users.svg");
 }
+
+// ========== Slider ==========
+.icon--arrow {
+	@include icon-modification(3rem, 2rem, "../assets/icons/", "arrow.svg", "arrow-hover.svg");
+	transition: $transition-duration;
+
+	&.icon--arrow-left {
+		transform: rotate(180deg);
+	}
+}

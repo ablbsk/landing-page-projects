@@ -8,14 +8,3 @@
 		margin-left: 4rem;
 	}
 }
-
-.navigation__link {
-	@include font($font-family-primary, $font-size-s, 1.5rem, $font-weight-bold);
-	color: $color-link;
-	text-decoration: none;
-	transition: color $transition-duration;
-
-	&:hover {
-		color: $color-primary;
-	}
-}

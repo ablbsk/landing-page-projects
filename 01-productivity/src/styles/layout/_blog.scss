@@ -1,0 +1,15 @@
+.blog {
+	display: flex;
+	justify-content: center;
+	padding: 10rem 0;
+	border-bottom: $border;
+	background-color: $color-background-accent;
+}
+
+.blog__header {
+	margin: 2rem auto 9rem auto;
+}
+
+.blog__dots {
+	margin: 10rem auto 0 auto;
+}
