@@ -910,6 +910,25 @@ template {
   line-height: 177%;
 }
 
+.footer__wrapper {
+  padding: 9rem 0;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 0.05rem;
+  margin-top: 7rem;
+  text-align: right;
+  color: #AEB8D0;
+}
+
 .header {
   border-bottom: 0.1rem solid #D8E3FE;
 }

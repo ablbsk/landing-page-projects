@@ -1,0 +1,15 @@
+.footer__wrapper {
+	padding: 9rem 0;
+}
+
+.footer__content {
+	display: flex;
+	align-items: center;
+}
+
+.footer__copyright {
+	@include font($font-family-primary, $font-size-s, 0.05rem, $font-weight-medium);
+	margin-top: 7rem;
+	text-align: right;
+	color: #AEB8D0;
+}
