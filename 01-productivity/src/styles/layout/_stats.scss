@@ -1,0 +1,39 @@
+$stats-column-padding: 9rem;
+
+.stats {
+	display: flex;
+	justify-content: center;
+	border-bottom: $border;
+}
+
+.stats__column {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding: 6.6rem 0;
+}
+
+.stats__column--left {
+	padding-right: $stats-column-padding;
+	align-items: end;
+	text-align: right;
+	color: $color-text-light;
+	background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+}
+
+.stats__column--right {
+	padding-left: $stats-column-padding;
+	align-items: start;
+	color: $color-primary;
+	background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+}
+
+.stats__value {
+	@include font($font-family-primary, $font-size-3xl, 8.3rem, $font-weight-regular);
+	margin-top: 1rem;
+}
+
+.stats__description {
+	@include font($font-family-primary, $font-size-l, 130%, $font-weight-medium);
+	max-width: 25rem;
+}

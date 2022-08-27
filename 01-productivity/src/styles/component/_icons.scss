@@ -3,6 +3,10 @@
 	cursor: pointer;
 }
 
+.icon--default-cursor {
+	cursor: default;
+}
+
 .icon--round {
 	display: inline-flex;
 	justify-content: center;
@@ -97,4 +101,14 @@
 
 .icon--save-events {
 	@include icon-modification(2.1rem, 1.9rem, "../assets/icons/features/", "save-events.svg");
+}
+
+// ========== Stats ==========
+
+.icon--rating {
+	@include icon-modification(6.7rem, 7rem, "../assets/icons/stats/", "rating.svg");
+}
+
+.icon--users {
+	@include icon-modification(7.5rem, 7rem, "../assets/icons/stats/", "users.svg");
 }
