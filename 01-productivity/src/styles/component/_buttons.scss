@@ -6,6 +6,7 @@
 	border: $border;
 	border-radius: $border-radius;
 	cursor: pointer;
+	outline: none;
 	transition: background-color $transition-duration;
 
 	&:hover {
@@ -22,6 +23,15 @@
 	}
 }
 
+.button--light {
+	color: $color-heading;
+	background-color: $color-button-background-light;
+
+	&:hover {
+		background-color: darken($color-button-background-light, $color-darken-percent);
+	}
+}
+
 .button--warning {
 	color: #D43F3F;
 	background-color: #FFD7D7;
@@ -33,11 +43,27 @@
 }
 
 .button--transparent {
+	position: relative;
+	right: 0.4rem;
 	color: #ADB4D2;
-	background-color: $color-background-accent;
+	background-color: transparent;
 	border-color: #D1D1E4;
+	transition: $transition-duration;
 
 	&:hover {
-		background-color: darken($color-background, $color-darken-percent);
+		color: $color-primary;
+		background-color: transparent;
+		border-color: $color-primary;
+	}
+}
+
+.button--transparent-light {
+	color: #C7D3FF;
+	border-color: #C7D3FF;
+
+	&:hover {
+		color: $color-text-light;
+		background-color: transparent;
+		border-color: $color-text-light;
 	}
 }

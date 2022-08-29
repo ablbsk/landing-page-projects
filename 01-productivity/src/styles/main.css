@@ -335,6 +335,7 @@ template {
   border: 0.1rem solid #D8E3FE;
   border-radius: 0.2rem;
   cursor: pointer;
+  outline: none;
   transition: background-color 0.3s;
 }
 .button:hover {
@@ -349,6 +350,14 @@ template {
   background-color: #548aff;
 }
 
+.button--light {
+  color: #3D4F9F;
+  background-color: #FFFFFF;
+}
+.button--light:hover {
+  background-color: #f2f2f2;
+}
+
 .button--warning {
   color: #D43F3F;
   background-color: #FFD7D7;
@@ -359,12 +368,27 @@ template {
 }
 
 .button--transparent {
+  position: relative;
+  right: 0.4rem;
   color: #ADB4D2;
-  background-color: #F5F8FF;
+  background-color: transparent;
   border-color: #D1D1E4;
+  transition: 0.3s;
 }
 .button--transparent:hover {
-  background-color: #f2f2f2;
+  color: #5E81FE;
+  background-color: transparent;
+  border-color: #5E81FE;
+}
+
+.button--transparent-light {
+  color: #C7D3FF;
+  border-color: #C7D3FF;
+}
+.button--transparent-light:hover {
+  color: #FFFFFF;
+  background-color: transparent;
+  border-color: #FFFFFF;
 }
 
 .description {
@@ -457,6 +481,10 @@ template {
 
 .header--center {
   text-align: center;
+}
+
+.header--light {
+  color: #FFFFFF;
 }
 
 .icon {
@@ -677,10 +705,22 @@ template {
 }
 
 .input {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 2.7rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  width: 24rem;
+  height: 4.5rem;
+  padding: 0.5rem 2rem;
+  color: #5E81FE;
+  background-color: #EFEFF7;
+  border: 0.2rem solid #EFEFF7;
+  border-radius: 0.4rem;
+  outline: none;
+  transition: border 0.3s;
+}
+.input:hover, .input:focus {
+  border: 0.2rem solid #5E81FE;
 }
 
 .link {
@@ -942,6 +982,38 @@ template {
   margin-top: 7rem;
   text-align: right;
   color: #AEB8D0;
+}
+
+.get-started {
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  border-bottom: 0.1rem solid #D8E3FE;
+}
+
+.get-started__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 0;
+  background-image: url("../assets/images/clouds.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.get-started__header {
+  margin-top: 1.6rem;
+}
+
+.get-started__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 191%;
+  margin: 3rem auto;
+  width: 70rem;
+  text-align: center;
+  letter-spacing: 0.03rem;
+  color: #FFFFFF;
 }
 
 .header {
