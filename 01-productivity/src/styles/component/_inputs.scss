@@ -1,0 +1,16 @@
+.input {
+	@include font($font-family-primary, $font-size-l, 1.6rem, $font-weight-bold);
+	width: 24rem;
+	height: 4.5rem;
+	padding: 0.5rem 2rem;
+	color: $color-primary;
+	background-color: #EFEFF7;
+	border: 0.2rem solid #EFEFF7;
+	border-radius: 0.4rem;
+	outline: none;
+	transition: border $transition-duration;
+
+	&:hover, &:focus {
+		border: 0.2rem solid $color-primary;
+	}
+}

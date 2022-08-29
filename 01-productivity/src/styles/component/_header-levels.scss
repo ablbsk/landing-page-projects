@@ -13,6 +13,11 @@
 	color: $color-heading;
 }
 
+.header-4-level {
+	@include font($font-family-primary, $font-size-2l, 2.2rem, $font-weight-bold);
+	color: $color-heading;
+}
+
 .header-5-level {
 	@include font($font-family-regular, $font-size-xs, 1.2rem, $font-weight-medium);
 	text-transform: uppercase;

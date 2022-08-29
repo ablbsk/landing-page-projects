@@ -1,0 +1,28 @@
+.newsletter {
+	padding: 12rem 0;
+	border-bottom: $border;
+	background-color: $color-background-additional;
+}
+
+.newsletter__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.newsletter__text {
+	margin-right: 8rem;
+}
+
+.newsletter__description {
+	@include font($font-family-regular, $font-size-m, 2.7rem, $font-weight-regular);
+	margin-top: 2rem;
+	width: 33rem;
+	color: $color-text;
+}
+
+.newsletter__button {
+	margin-left: 1.5rem;
+	padding: 2rem 7rem;
+	border-radius: 0.4rem;
+}
