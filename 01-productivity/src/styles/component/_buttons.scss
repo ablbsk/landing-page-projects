@@ -32,6 +32,16 @@
 	}
 }
 
+.button--dark {
+	color: #7382A3;
+	background-color: #E8ECF4;
+
+	&:hover {
+		color: $color-button-primary-text;
+		background-color: $color-primary;
+	}
+}
+
 .button--warning {
 	color: #D43F3F;
 	background-color: #FFD7D7;

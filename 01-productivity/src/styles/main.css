@@ -358,6 +358,15 @@ template {
   background-color: #f2f2f2;
 }
 
+.button--dark {
+  color: #7382A3;
+  background-color: #E8ECF4;
+}
+.button--dark:hover {
+  color: #FFFFFF;
+  background-color: #5E81FE;
+}
+
 .button--warning {
   color: #D43F3F;
   background-color: #FFD7D7;
@@ -704,6 +713,17 @@ template {
   transform: rotate(180deg);
 }
 
+.icon--vector {
+  width: 2rem;
+  height: 1.4rem;
+  background-image: url("../assets/icons/vector.svg");
+  transition: 0.3s;
+  margin: 0.25rem 1rem 0 0;
+}
+.icon--vector:hover {
+  background-image: url("../assets/icons/vector-hover.svg");
+}
+
 .input {
   font-family: "Quicksand", sans-serif;
   font-size: 1.6rem;
@@ -743,6 +763,44 @@ template {
 
 .navigation__item + .navigation__item {
   margin-left: 4rem;
+}
+
+.questions {
+  width: 70rem;
+}
+
+.question {
+  padding: 2rem;
+  border-bottom: 0.1rem solid #D8E3FE;
+  color: #8D96BD;
+}
+
+.question__title {
+  display: flex;
+  align-items: center;
+}
+
+.question__title-text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.question__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 0 5rem;
+}
+
+.question__description-text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+  letter-spacing: 0.03em;
+  width: 40rem;
 }
 
 .quotes {
@@ -896,6 +954,21 @@ template {
 
 .customers__item {
   margin: 2rem;
+}
+
+.faq {
+  padding: 17.5rem;
+  border-bottom: 0.1rem solid #D8E3FE;
+}
+
+.faq__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq__header {
+  margin: 2rem auto 7rem auto;
 }
 
 .features {

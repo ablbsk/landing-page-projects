@@ -122,3 +122,10 @@
 		transform: rotate(180deg);
 	}
 }
+
+// ========== FAQ ==========
+
+.icon--vector {
+	@include icon-modification(2rem, 1.4rem, "../assets/icons/", "vector.svg", "vector-hover.svg");
+	margin: 0.25rem 1rem 0 0;
+}

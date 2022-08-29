@@ -1,0 +1,14 @@
+.faq {
+	padding: 17.5rem;
+	border-bottom: $border;
+}
+
+.faq__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.faq__header {
+	margin: 2rem auto 7rem auto;
+}
