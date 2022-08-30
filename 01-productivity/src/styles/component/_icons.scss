@@ -14,70 +14,96 @@
 	border-radius: 50%;
 }
 
-.icon--promo-play {
-	width: 5rem;
-	height: 5rem;
-	margin: 2rem auto;
-	background-color: $color-button-background-light;
-	box-shadow: 0 1rem 5rem rgba($color-shadow, 0.6);
-	transition: box-shadow $transition-duration;
+// ==================== Promo ====================
 
-	>.icon--play {
-		@include icon-modification(1rem, 1.1rem, "../assets/icons/", "play.svg");
-	}
+.icon--promo-play {
+	@include font($font-family-primary, $font-size-2l, 1.8rem, $font-weight-bold);
+
+	$size: 5rem;
+	$shadow-value: 0 0 5rem;
+
+	width: $size;
+	height: $size;
+	margin: 2rem auto;
+	color: $color-primary;
+	background-color: $color-button-background-light;
+	box-shadow: $shadow-value rgba($color-shadow, 0.8);
+	transition: box-shadow $transition-duration;
+	text-decoration: none;
 
 	&:hover {
-		box-shadow: 0 1rem 5rem rgba($color-shadow, 100%);
+		box-shadow: $shadow-value rgba($color-shadow, 0.6);
 	}
 }
 
-// ========== Socials ==========
+
+// ==================== Socials ====================
+
+@mixin social-icon($key) {
+	@include icon-background("../assets/icons/socials/", $key, 2rem);
+}
+
 .icon--facebook {
-	@include icon-modification(1rem, 1.8rem, "../assets/icons/socials/", "facebook.svg", "facebook-hover.svg");
+	@include social-icon("facebook");
 }
 
 .icon--telegram {
-	@include icon-modification(1.8rem, 1.4rem, "../assets/icons/socials/", "telegram.svg", "telegram-hover.svg");
+	@include social-icon("telegram");
 }
 
 .icon--twitter {
-	@include icon-modification(1.8rem, 1.4rem, "../assets/icons/socials/", "twitter.svg", "twitter-hover.svg");
+	@include social-icon("twitter");
 }
 
 .icon--medium {
-	@include icon-modification(1.8rem, 1.4rem, "../assets/icons/socials/", "medium.svg", "medium-hover.svg");
+	@include social-icon("medium");
 }
 
-// ========== Customers ==========
+
+// ==================== Customers ====================
+
+@mixin customer-icon($key) {
+	@include icon-background("../assets/icons/customers/", $key, 13rem, 3rem);
+}
+
 .icon--bitbucket {
-	@include icon-modification(13rem, 3rem, "../assets/icons/customers/", "bitbucket.svg", "bitbucket-hover.svg");
+	@include customer-icon("bitbucket");
 }
 
 .icon--apple-watch {
-	@include icon-modification(12rem, 2.5rem, "../assets/icons/customers/", "apple-watch.svg", "apple-watch-hover.svg");
+	@include customer-icon("apple-watch");
 }
 
 .icon--facebook-customers {
-	@include icon-modification(12rem, 2.5rem, "../assets/icons/customers/", "facebook-customers.svg", "facebook-customers-hover.svg");
+	@include customer-icon("facebook-customers");
 }
 
 .icon--atlassian {
-	@include icon-modification(12rem, 2.5rem, "../assets/icons/customers/", "atlassian.svg", "atlassian-hover.svg");
+	@include customer-icon("atlassian");
 }
 
 .icon--audi {
-	@include icon-modification(12rem, 3rem, "../assets/icons/customers/", "audi.svg", "audi-hover.svg");
+	@include customer-icon("audi");
 }
 
-// ========== Features ==========
+
+// ==================== Features ====================
+
+@mixin feature-icon($key) {
+	@include icon-background("../assets/icons/features/", $key, 3rem, 3rem, false);
+}
+
 .icon--feature {
+	$color: #F1F5FF;
+	$size: 6.9rem;
+
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 6.9rem;
-	height: 6.9rem;
-	background-color: #F1F5FF;
-	border: 0.2rem solid #F1F5FF;
+	width: $size;
+	height: $size;
+	background-color: $color;
+	border: 0.2rem solid $color;
 	border-radius: 50%;
 	cursor: default;
 	transition: border-color $transition-duration;
@@ -88,34 +114,36 @@
 }
 
 .icon--overview {
-	@include icon-modification(2rem, 2.4rem, "../assets/icons/features/", "overview.svg");
+	@include feature-icon("overview");
 }
 
 .icon--files {
-	@include icon-modification(3rem, 2rem, "../assets/icons/features/", "files.svg");
+	@include feature-icon("files");
 }
 
 .icon--meeting-chats {
-	@include icon-modification(2.2rem, 2rem, "../assets/icons/features/", "meeting-chats.svg");
+	@include feature-icon("meeting-chats");
 }
 
 .icon--save-events {
-	@include icon-modification(2.1rem, 1.9rem, "../assets/icons/features/", "save-events.svg");
+	@include feature-icon("save-events");
 }
 
-// ========== Stats ==========
+
+// ==================== Stats ====================
 
 .icon--rating {
-	@include icon-modification(6.7rem, 7rem, "../assets/icons/stats/", "rating.svg");
+	@include icon-background("../assets/icons/stats/", "rating", 7rem, 7rem, false);
 }
 
 .icon--users {
-	@include icon-modification(7.5rem, 7rem, "../assets/icons/stats/", "users.svg");
+	@include icon-background("../assets/icons/stats/", "users", 7rem, 7rem, false);
 }
 
-// ========== Slider ==========
+// ==================== Slider ====================
+
 .icon--arrow {
-	@include icon-modification(3rem, 2rem, "../assets/icons/", "arrow.svg", "arrow-hover.svg");
+	@include icon-background("../assets/icons/", "arrow", 3rem);
 	transition: $transition-duration;
 
 	&.icon--arrow-left {
@@ -123,9 +151,10 @@
 	}
 }
 
-// ========== FAQ ==========
+
+// ==================== FAQ ====================
 
 .icon--vector {
-	@include icon-modification(2rem, 1.4rem, "../assets/icons/", "vector.svg", "vector-hover.svg");
+	@include icon-background("../assets/icons/", "vector", 2rem);
 	margin: 0.25rem 1rem 0 0;
 }

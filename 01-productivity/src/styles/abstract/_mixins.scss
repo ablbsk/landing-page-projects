@@ -5,13 +5,21 @@
 	line-height: $height;
 }
 
-@mixin icon-modification($width, $height, $url, $name, $name-hover: $name) {
+@mixin icon-background($url, $name, $width, $height: $width, $hover: true) {
+	$path: $url + $name;
+
 	width: $width;
 	height: $height;
-	background-image: url($url + $name);
+	background-image: url($path + ".svg");
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
 	transition: $transition-duration;
 
-	&:hover {
-		background-image: url($url + $name-hover);
+	@if $hover == true {
+		&:hover {
+			background-image: url($path + "-hover.svg" or $path);
+			outline: none;
+		}
 	}
 }
