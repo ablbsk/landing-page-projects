@@ -1,36 +1,43 @@
-.header-1-level {
+// ========== HEADER SIZES ==========
+
+.header-1-size {
 	@include font($font-family-primary, $font-size-3xl, 6rem, $font-weight-light);
-	color: $color-heading;
+	@extend %header-color;
 }
 
-.header-2-level {
+.header-2-size {
 	@include font($font-family-primary, $font-size-2xl, 4.5rem, $font-weight-light);
-	color: $color-heading;
+	@extend %header-color;
 }
 
-.header-3-level {
+.header-3-size {
 	@include font($font-family-primary, $font-size-xl, 3rem, $font-weight-medium);
-	color: $color-heading;
+	@extend %header-color;
 }
 
-.header-4-level {
+.header-4-size {
 	@include font($font-family-primary, $font-size-2l, 2.2rem, $font-weight-bold);
-	color: $color-heading;
+	@extend %header-color;
 }
 
-.header-5-level {
+.header-5-size {
 	@include font($font-family-regular, $font-size-xs, 1.2rem, $font-weight-medium);
-	text-transform: uppercase;
-	color: $color-heading;
+	@extend %header-color;
 }
 
-.header-6-level {
+.header-6-size {
 	@include font($font-family-regular, $font-size-m, 2.5rem, $font-weight-bold);
-	color: $color-primary;
+	@extend %header-color;
 	margin: 3rem 0;
 }
 
-.header--accent-weight {
+// ========== HEADER MODIFICATIONS ==========
+
+.header--uppercase {
+	text-transform: uppercase;
+}
+
+.header--bold {
 	font-weight: $font-weight-medium;
 }
 
