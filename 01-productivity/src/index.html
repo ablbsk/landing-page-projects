@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Productivity — landing page">
   <title>Productivity</title>
   <link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon">
 </head>
 <body>
 <header id="header" class="header">
   <div class="wrapper header__wrapper">
-    <a href="#header">
+    <a href="#header" aria-label="Productivity — Logo">
       <img class="logo" src="./assets/icons/logo.svg" alt="Productivity — Logo">
     </a>
     <nav class="navigation">
@@ -34,22 +35,22 @@
     <div class="socials">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Our Facebook">
             <span class="icon icon--facebook"></span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Our Telegram">
             <span class="icon icon--telegram"></span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Our Twitter">
             <span class="icon icon--twitter"></span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Our Medium">
             <span class="icon icon--medium"></span>
           </a>
         </li>
@@ -71,7 +72,7 @@
         <!--      <li class="promo__item">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</li>-->
         <!--      <li class="promo__item">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</li>-->
       </ul>
-      <a class="icon icon--round icon--promo-play" href="#">
+      <a class="icon icon--round icon--promo-play" href="#" aria-label="Productivity — play video">
         <span class="icon--play"></span>
       </a>
     </div>
@@ -85,27 +86,27 @@
     <div class="wrapper">
       <ul class="customers__list">
         <li class="customers__item">
-          <a class="customers__link" href="#">
+          <a class="customers__link" href="#" aria-label="Bitbucket is one of our major customers">
             <span class="icon icon--bitbucket"></span>
           </a>
         </li>
         <li class="customers__item">
-          <a class="customers__link" href="#">
+          <a class="customers__link" href="#" aria-label="Apple Watch is one of our major customers">
             <span class="icon icon--apple-watch"></span>
           </a>
         </li>
         <li class="customers__item">
-          <a class="customers__link" href="#">
+          <a class="customers__link" href="#" aria-label="Facebook is one of our major customers">
             <span class="icon icon--facebook-customers"></span>
           </a>
         </li>
         <li class="customers__item">
-          <a class="customers__link" href="#">
+          <a class="customers__link" href="#" aria-label="Atlassian is one of our major customers">
             <span class="icon icon--atlassian"></span>
           </a>
         </li>
         <li class="customers__item">
-          <a class="customers__link" href="#">
+          <a class="customers__link" href="#" aria-label="Audi is one of our major customers">
             <span class="icon icon--audi"></span>
           </a>
         </li>
@@ -306,7 +307,8 @@
           alterum.</p>
       </div>
       <form class="newsletter__form">
-        <input class="input" type="email" placeholder="Email address">
+        <label class="visual-hidden" for="email">Email:</label>
+        <input id="email" class="input" type="email" placeholder="Email address">
         <button class="button button--primary newsletter__button">Save me</button>
       </form>
     </div>
@@ -315,7 +317,7 @@
 <footer class="footer">
   <div class="wrapper footer__wrapper">
     <div class="footer__content">
-      <a href="#header">
+      <a href="#header" aria-label="Productivity — Logo">
         <img class="logo" src="./assets/icons/logo.svg" alt="Productivity — Logo">
       </a>
       <nav class="navigation">
@@ -340,22 +342,22 @@
       <div class="socials">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Our Facebook">
               <span class="icon icon--facebook"></span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Our Telegram">
               <span class="icon icon--telegram"></span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Our Twitter">
               <span class="icon icon--twitter"></span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Our Medium">
               <span class="icon icon--medium"></span>
             </a>
           </li>
