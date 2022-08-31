@@ -1197,9 +1197,14 @@ template {
 }
 
 .plan {
-  padding: 17rem 0;
+  padding: 16rem 0;
   border-bottom: 0.1rem solid #D8E3FE;
   background-color: #F5F8FF;
+}
+@media (max-width: 992px) {
+  .plan {
+    padding: 12rem 0 8rem 0;
+  }
 }
 
 .plan__wrapper {
@@ -1208,9 +1213,28 @@ template {
   align-items: center;
   max-width: 1440px;
 }
+@media (max-width: 992px) {
+  .plan__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .plan__content {
-  width: 35rem;
+  max-width: 35rem;
+  margin-right: 4rem;
+}
+@media (max-width: 992px) {
+  .plan__content {
+    max-width: 70rem;
+    margin: 0 0 4rem 0;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 414px) {
+  .plan__content {
+    padding: 0;
+  }
 }
 
 .plan__content-header {
@@ -1218,7 +1242,7 @@ template {
 }
 
 .plan__description {
-  margin-bottom: 4.7rem;
+  margin-bottom: 4rem;
 }
 
 .plan__container {

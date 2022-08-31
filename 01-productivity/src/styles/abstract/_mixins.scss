@@ -28,7 +28,7 @@
 // ==================== Media ====================
 
 @mixin media-max-tablet {
-	@media (max-width: $tablet-min-width) {
+	@media (max-width: $tablet-max-width) {
 		@content;
 	}
 }
