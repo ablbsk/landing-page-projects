@@ -1,5 +1,5 @@
 .customers {
-	padding: 4rem 0;
+	padding: $base 0;
 	border-bottom: $border;
 }
 
@@ -20,5 +20,5 @@
 }
 
 .customers__item {
-	margin: 2rem;
+	margin: calc($base/2);
 }

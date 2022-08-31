@@ -1,10 +1,10 @@
 .plan {
-	padding: 16rem 0;
+	padding: $base*4 0;
 	border-bottom: $border;
 	background-color: $color-background-accent;
 
 	@include media-max-tablet {
-		padding: 12rem 0 8rem 0;
+		padding: $base*3 0 $base*2 0;
 	}
 }
 
@@ -22,12 +22,12 @@
 
 .plan__content {
 	max-width: 35rem;
-	margin-right: 4rem;
+	margin-right: $base;
 
 	@include media-max-tablet {
 		max-width: 70rem;
-		margin: 0 0 4rem 0;
-		padding: 0 2rem;
+		margin: 0 0 $base 0;
+		padding: 0 calc($base/2);
 	}
 
 	@include media-max-mobile {
@@ -36,11 +36,11 @@
 }
 
 .plan__content-header {
-	margin: 2.8rem 0;
+	margin: calc($base/1.5) 0;
 }
 
 .plan__description {
-	margin-bottom: 4rem;
+	margin-bottom: $base;
 }
 
 .plan__container {

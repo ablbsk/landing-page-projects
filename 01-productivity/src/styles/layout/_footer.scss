@@ -1,5 +1,5 @@
-.footer__wrapper {
-	padding: 9rem 0;
+.footer {
+	padding: $base*2 0;
 }
 
 .footer__content {
@@ -9,7 +9,7 @@
 
 .footer__copyright {
 	@include font($font-family-primary, $font-size-s, 0.05rem, $font-weight-medium);
-	margin-top: 7rem;
+	margin-top: $base*2;
 	text-align: right;
 	color: #AEB8D0;
 }

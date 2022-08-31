@@ -1,5 +1,9 @@
 .socials {
-	margin: 0 4.5rem 0 auto;
+	margin: 0 $base 0 auto;
+}
+
+.social--in-menu {
+	margin: 0;
 }
 
 .social__list {
@@ -9,6 +13,6 @@
 
 .social__item {
 	& + & {
-		margin-left: 3.5rem;
+		margin-left: $base;
 	}
 }

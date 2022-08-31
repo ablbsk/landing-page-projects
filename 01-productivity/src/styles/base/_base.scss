@@ -4,6 +4,10 @@ html {
   cursor: default;
 }
 
+.body--locked {
+  overflow: hidden;
+}
+
 .visual-hidden {
   position: absolute;
   width: 1px;
