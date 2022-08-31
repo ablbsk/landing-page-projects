@@ -5,6 +5,23 @@
 .footer__content {
 	display: flex;
 	align-items: center;
+
+	@include media-max-tablet {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.footer__navigation {
+	@include media-max-tablet {
+		margin-top: $base*1.5;
+	}
+}
+
+.footer__socials {
+	@include media-max-tablet {
+		margin: $base*1.5 0;
+	}
 }
 
 .footer__copyright {
@@ -12,4 +29,8 @@
 	margin-top: $base*2;
 	text-align: right;
 	color: #AEB8D0;
+
+	@include media-max-tablet {
+		text-align: center;
+	}
 }
