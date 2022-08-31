@@ -23,3 +23,24 @@
 		}
 	}
 }
+
+
+// ==================== Media ====================
+
+@mixin media-max-tablet {
+	@media (max-width: $tablet-min-width) {
+		@content;
+	}
+}
+
+@mixin media-average-tablet {
+	@media (max-width: $tablet-average-width) {
+		@content;
+	}
+}
+
+@mixin media-max-mobile {
+	@media (max-width: $tablet-min-width) {
+		@content;
+	}
+}
