@@ -862,6 +862,10 @@ template {
   color: #5E81FE;
 }
 
+.navigation__item + .navigation__item {
+  margin-left: 4rem;
+}
+
 .navigation__list {
   display: flex;
   margin-left: 6rem;
@@ -883,9 +887,6 @@ template {
     font-weight: 700;
     line-height: 1.5rem;
   }
-}
-.navigation__list .navigation__item + .navigation__list .navigation__item {
-  margin-left: 4rem;
 }
 
 .questions {

@@ -1,3 +1,9 @@
+.navigation__item {
+	& + & {
+		margin-left: $base;
+	}
+}
+
 .navigation__list {
 	display: flex;
 	margin-left: $base*1.5;
@@ -15,12 +21,6 @@
 			.link {
 				@include font($font-family-primary, $font-size-l, 1.5rem, $font-weight-bold);
 			}
-		}
-	}
-
-	.navigation__item {
-		& + & {
-			margin-left: $base;
 		}
 	}
 }
