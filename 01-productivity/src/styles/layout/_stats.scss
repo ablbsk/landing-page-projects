@@ -1,39 +1,85 @@
-$stats-column-padding: 9rem;
-
 .stats {
 	display: flex;
 	justify-content: center;
 	border-bottom: $border;
+
+	@include media-max-mobile {
+		display: block;
+	}
 }
 
 .stats__column {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	padding: 6.6rem 0;
+	padding: $base*1.5 0;
+
+	@include media-max-mobile {
+		width: 100%;
+	}
 }
 
 .stats__column--left {
-	padding-right: $stats-column-padding;
+	padding-right: $base*2;
 	align-items: end;
 	text-align: right;
 	color: $color-text-light;
 	background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+
+	@include media-average-tablet {
+		padding-right: $base;
+	}
 }
 
 .stats__column--right {
-	padding-left: $stats-column-padding;
+	padding-left: $base*2;
 	align-items: start;
 	color: $color-primary;
 	background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+
+	@include media-average-tablet {
+		padding-left: $base;
+	}
+}
+
+.stats__column--horizontal {
+	@include media-max-mobile {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: $base 0;
+		margin: 0;
+		text-align: center;
+	}
+}
+
+.stats__column-container {
+	@include media-max-mobile {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: calc($base/2);
+	}
 }
 
 .stats__value {
 	@include font($font-family-primary, $font-size-3xl, 8.3rem, $font-weight-regular);
-	margin-top: 1rem;
+	margin-top: calc($base/4);
+
+	@include media-average-tablet {
+		@include font($font-family-primary, $font-size-2xl, 6.3rem, $font-weight-regular);
+	}
+
+	@include media-max-mobile {
+		margin: 0 0 0 calc($base/2);
+	}
 }
 
 .stats__description {
 	@include font($font-family-primary, $font-size-l, 130%, $font-weight-medium);
-	max-width: 25rem;
+	width: 25rem;
+
+	@include media-average-tablet {
+		width: 75%;
+	}
 }

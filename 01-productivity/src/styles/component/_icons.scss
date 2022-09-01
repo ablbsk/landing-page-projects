@@ -134,10 +134,18 @@
 
 .icon--rating {
 	@include icon-background("../assets/icons/stats/", "rating", 7rem, 7rem, false);
+
+	@include media-average-tablet {
+		@include icon-background("../assets/icons/stats/", "rating", 5rem, 5rem, false);
+	}
 }
 
 .icon--users {
 	@include icon-background("../assets/icons/stats/", "users", 7rem, 7rem, false);
+
+	@include media-average-tablet {
+		@include icon-background("../assets/icons/stats/", "users", 5rem, 5rem, false);
+	}
 }
 
 // ==================== Slider ====================
