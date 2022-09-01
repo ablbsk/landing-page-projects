@@ -1,39 +1,101 @@
 .features {
 	display: flex;
 	justify-content: center;
-	padding: 17rem 0;
+	padding: $base*4 0;
 	border-bottom: $border;
 	background-color: $color-background;
 	background-image: url("../assets/images/features.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	@include media-max-mobile {
+		padding: $base*3 0;
+	}
 }
 
 .features__header {
-	margin: 2rem 0 9rem 0;
+	margin-top: calc($base/2);
 }
 
 .features__container {
 	display: flex;
+	margin: $base*2.5 0;
+
+	@include media-max-tablet {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: $base*2 0;
+	}
+
+	@include media-max-mobile {
+		margin: $base*1.5 0;
+	}
 }
 
-// ========== Features buttons container ==========
+.features__column {
+	display: flex;
+
+	@include media-max-mobile {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+
+// ==================== Feature ====================
+
+.feature {
+	width: 14rem;
+	margin: calc($base/2) $base;
+	text-align: center;
+
+	@include media-max-tablet {
+		width: 18rem;
+		margin: $base;
+	}
+
+	@include media-average-tablet {
+		width: 14rem;
+	}
+
+	@include media-max-mobile {
+		width: 18rem;
+	}
+}
+
+.feature__description {
+	@include font($font-family-regular, $font-size-s, 177%, $font-weight-regular);
+}
+
+
+// ==================== Features buttons ====================
+
 .features__buttons {
 	display: flex;
 	justify-content: center;
-	margin-top: 9rem;
+
+	@include media-max-mobile {
+		display: block;
+		text-align: center;
+	}
 }
 
 .features__buttons-or {
 	@include font($font-family-regular, $font-size-s, 1.8rem, $font-weight-regular);
-	margin: 0 2rem;
+	margin: 0 calc($base/2);
 	width: 8rem;
 	text-align: center;
 	color: #DFE2EF;
+
+	@include media-max-mobile {
+		margin: calc($base/2) auto $base auto;
+	}
 }
 
 .features__buttons-text {
-	padding: 0 1rem;
+	padding: 0 calc($base/4);
 	position: relative;
 	top: 1.6rem;
 	text-transform: uppercase;
@@ -44,19 +106,4 @@
 	border: none;
 	height: 0.1rem;
 	background-color: #DFE2EF;
-}
-
-// ========== Feature ==========
-.feature {
-	width: 14rem;
-	margin: 0 3.3rem;
-	text-align: center;
-}
-
-.features__column {
-	display: flex;
-}
-
-.feature__description {
-	@include font($font-family-regular, $font-size-s, 177%, $font-weight-regular);
 }

@@ -1125,26 +1125,90 @@ template {
 .features {
   display: flex;
   justify-content: center;
-  padding: 17rem 0;
+  padding: 16rem 0;
   border-bottom: 0.1rem solid #D8E3FE;
   background-color: #FFFFFF;
   background-image: url("../assets/images/features.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 414px) {
+  .features {
+    padding: 12rem 0;
+  }
+}
 
 .features__header {
-  margin: 2rem 0 9rem 0;
+  margin-top: 2rem;
 }
 
 .features__container {
   display: flex;
+  margin: 10rem 0;
+}
+@media (max-width: 992px) {
+  .features__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 8rem 0;
+  }
+}
+@media (max-width: 414px) {
+  .features__container {
+    margin: 6rem 0;
+  }
+}
+
+.features__column {
+  display: flex;
+}
+@media (max-width: 414px) {
+  .features__column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.feature {
+  width: 14rem;
+  margin: 2rem 4rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .feature {
+    width: 18rem;
+    margin: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .feature {
+    width: 14rem;
+  }
+}
+@media (max-width: 414px) {
+  .feature {
+    width: 18rem;
+  }
+}
+
+.feature__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 177%;
 }
 
 .features__buttons {
   display: flex;
   justify-content: center;
-  margin-top: 9rem;
+}
+@media (max-width: 414px) {
+  .features__buttons {
+    display: block;
+    text-align: center;
+  }
 }
 
 .features__buttons-or {
@@ -1156,6 +1220,11 @@ template {
   width: 8rem;
   text-align: center;
   color: #DFE2EF;
+}
+@media (max-width: 414px) {
+  .features__buttons-or {
+    margin: 2rem auto 4rem auto;
+  }
 }
 
 .features__buttons-text {
@@ -1170,23 +1239,6 @@ template {
   border: none;
   height: 0.1rem;
   background-color: #DFE2EF;
-}
-
-.feature {
-  width: 14rem;
-  margin: 0 3.3rem;
-  text-align: center;
-}
-
-.features__column {
-  display: flex;
-}
-
-.feature__description {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 177%;
 }
 
 .footer {
