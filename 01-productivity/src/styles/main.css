@@ -1367,7 +1367,7 @@ template {
 }
 
 .get-started__header {
-  margin-top: 1.6rem;
+  margin-top: 1.7777777778rem;
 }
 
 .get-started__description {
@@ -1380,6 +1380,11 @@ template {
   text-align: center;
   letter-spacing: 0.03rem;
   color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .get-started__description {
+    width: 90%;
+  }
 }
 
 .header {

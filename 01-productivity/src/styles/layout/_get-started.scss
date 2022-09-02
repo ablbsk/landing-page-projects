@@ -15,14 +15,18 @@
 }
 
 .get-started__header {
-	margin-top: 1.6rem;
+	margin-top: calc($base/2.25);
 }
 
 .get-started__description {
 	@include font($font-family-regular, $font-size-l, 191%, $font-weight-regular);
-	margin: 3rem auto;
+	margin: $base*0.75 auto;
 	width: 70rem;
 	text-align: center;
 	letter-spacing: 0.03rem;
 	color: $color-text-light;
+
+	@include media-average-tablet {
+		width: 90%;
+	}
 }
