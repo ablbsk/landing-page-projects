@@ -1,0 +1,116 @@
+.quotes {
+	padding: $base*2.5 0;
+	background-color: $color-background-additional;
+	border-bottom: $border;
+}
+
+.quotes__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include media-max-tablet {
+		display: block;
+	}
+}
+
+.quotes__text {
+	@include font($font-family-regular, $font-size-m, 2.7rem, $font-weight-regular);
+	width: 35rem;
+	color: $color-text;
+
+	@include media-max-tablet {
+		text-align: center;
+		margin: 0 auto $base*1.5 auto;
+	}
+
+	@include media-max-mobile {
+		width: 24rem;
+	}
+}
+
+.quotes__header {
+	margin: $base*0.75 auto calc($base/1.5) auto;
+}
+
+.quotes__text-description {
+	margin-bottom: $base;
+}
+
+
+// ==================== Quote ====================
+
+.quote {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $base $base*1.5;
+	background-color: $color-background;
+	border: $border;
+	box-shadow: 0 0.5rem 3rem $color-shadow;
+	transition: box-shadow $transition-duration;
+
+	&:hover {
+		box-shadow: 0 0.5rem 2rem $color-shadow;
+	}
+
+	@include media-max-tablet {
+		width: 36rem;
+		margin: 0 auto;
+	}
+
+	@include media-min-tablet {
+		width: 28rem;
+		padding: calc($base/1.25);
+	}
+
+	@include media-max-mobile {
+		width: 20rem;
+		padding: calc($base/1.5);
+	}
+}
+
+.quotes__content {
+	@include font($font-family-regular, $font-size-m, 2.7rem, $font-weight-regular);
+	width: 36rem;
+	color: $color-text;
+
+	@include media-min-tablet {
+		width: 24rem;
+	}
+
+	@include media-max-mobile {
+		width: auto;
+	}
+}
+
+.quotes__slider {
+	margin-left: $base;
+
+	@include media-max-tablet {
+		margin: 0 auto;
+	}
+}
+
+.quote__avatar {
+	position: absolute;
+	width: 6rem;
+	height: 6rem;
+	margin-top: $base*2.25;
+
+	@include media-max-tablet {
+		margin-top: $base*2.25;
+	}
+
+	@include media-min-tablet {
+		margin-top: $base*2.75;
+	}
+
+	@include media-max-mobile {
+		margin-top: $base*3.25;
+	}
+}
+
+.quote__slider-dots {
+	margin-top: $base*2;
+}
