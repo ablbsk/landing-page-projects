@@ -1,15 +1,27 @@
 .blog {
 	display: flex;
 	justify-content: center;
-	padding: 10rem 0;
+	padding: $base*2.5 0;
 	border-bottom: $border;
 	background-color: $color-background-accent;
+
+	@include media-min-tablet {
+		padding: $base*2 0;
+	}
+
+	@include media-max-mobile {
+		padding: $base 0;
+	}
 }
 
 .blog__header {
-	margin: 2rem auto 9rem auto;
+	margin: calc($base/2) auto $base*2 auto;
 }
 
 .blog__dots {
-	margin: 10rem auto 0 auto;
+	margin: $base*2.5 auto 0 auto;
+
+	@include media-min-tablet {
+		margin: $base*2 0 $base*0.5 0;
+	}
 }

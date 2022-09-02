@@ -1,56 +1,101 @@
 .slider {
 	display: flex;
 	align-items: center;
+
+	@include media-max-tablet {
+		margin: 0 5%;
+	}
+
+	@include media-average-tablet {
+		margin: 0;
+	}
 }
 
 .slider__content {
 	display: flex;
-	justify-content: space-between;
-	max-width: 100rem;
-	max-height: 40rem;
-	padding: 6rem 3rem;
-	margin: 0 5rem;
+	justify-content: center;
+	width: 100%;
+	max-width: 90rem;
+	padding: $base;
+	margin: 0 $base;
 	background-color: $color-background;
 	border: $border;
+
+	@include media-min-tablet {
+		text-align: center;
+	}
 }
 
-// ========== Images ==========
+
+// ==================== Images ====================
+
 .slider__images {
 	display: flex;
+
+	@include media-max-tablet {
+		display: none;
+	}
 }
 
 .slider__images-column {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
+
+	>.slider__image--small:first-child {
+		margin-bottom: calc($base/4);
+	}
 }
 
 .slider__image--big {
-	height: 100%;
-	width: 100%;
-	margin-right: 1rem;
+	margin-right: calc($base/4);
+	object-fit: contain;
 }
 
-.slider__image--small {
-	height: 13rem;
-	width: 13rem;
-}
 
-// ========== Text ==========
+// ==================== Text ====================
+
 .slider__text {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 40rem;
-	margin-left: 5rem;
+	margin-left: $base;
+
+	@include media-average-tablet {
+		margin: 0;
+	}
+}
+
+.slider__header {
+	@include media-average-tablet {
+		@include font($font-family-primary, $font-size-xl, 2.4rem, $font-weight-regular);
+	}
 }
 
 .slider__text-description {
 	@include font($font-family-regular, $font-size-m, 2.7rem, $font-weight-regular);
 	color: $color-text;
+	margin: calc($base/2) 0;
+
+	@include media-average-tablet {
+		margin: $base 0;
+	}
+}
+
+.slider__more {
+	display: flex;
+	align-items: center;
+
+	@include media-min-tablet {
+		flex-direction: column;
+	}
 }
 
 .slider__link {
-	margin-left: 3rem;
+	margin-left: calc($base/2);
 	color: $color-text;
+
+	@include media-min-tablet {
+		margin: calc($base/1.5) 0 0 0;
+	}
 }

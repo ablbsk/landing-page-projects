@@ -1,14 +1,18 @@
 .promo {
 	display: flex;
 	flex-direction: column;
-	height: 57rem;
-	padding-top: 9rem;
+	height: 60rem;
+	padding-top: $base*2;
 	border-bottom: $border;
 	background-color: $color-background-accent;
 	background-image: url("../assets/images/promo.svg");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover;
+
+	@include media-average-tablet {
+		height: 64rem;
+	}
 }
 
 .promo__content {
@@ -17,15 +21,15 @@
 	text-align: center;
 
 	.promo__content-header {
-		margin-top: 1.6rem;
+		margin-top: calc($base/2);
 	}
 }
 
 .promo__list {
-	margin: 2.8rem 2rem 2rem 2rem;
+	margin: $base calc($base/2) calc($base/2) calc($base/2);
 }
 
 .promo__dots {
 	margin-top: auto;
-	margin-bottom: 4rem;
+	margin-bottom: $base;
 }

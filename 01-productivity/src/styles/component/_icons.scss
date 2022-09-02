@@ -157,6 +157,10 @@
 	&.icon--arrow-left {
 		transform: rotate(180deg);
 	}
+
+	@include media-average-tablet {
+		display: none;
+	}
 }
 
 
