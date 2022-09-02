@@ -857,25 +857,6 @@ template {
   outline: none;
 }
 
-.input {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.6rem;
-  width: 24rem;
-  height: 4.5rem;
-  padding: 0.5rem 2rem;
-  color: #5E81FE;
-  background-color: #EFEFF7;
-  border: 0.2rem solid #EFEFF7;
-  border-radius: 0.4rem;
-  outline: none;
-  transition: border 0.3s;
-}
-.input:hover, .input:focus {
-  border: 0.2rem solid #5E81FE;
-}
-
 .link {
   font-family: "Quicksand", sans-serif;
   font-size: 1.2rem;
@@ -1432,15 +1413,31 @@ template {
   border-bottom: 0.1rem solid #D8E3FE;
   background-color: #FCFDFF;
 }
+@media (max-width: 992px) {
+  .newsletter {
+    padding: 8rem 0;
+  }
+}
 
 .newsletter__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .newsletter__wrapper {
+    display: block;
+  }
+}
 
 .newsletter__text {
   margin-right: 8rem;
+}
+@media (max-width: 992px) {
+  .newsletter__text {
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .newsletter__description {
@@ -1452,11 +1449,66 @@ template {
   width: 33rem;
   color: #8D96BD;
 }
+@media (max-width: 992px) {
+  .newsletter__description {
+    margin: 2rem auto;
+    width: 30rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .newsletter__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+}
 
 .newsletter__button {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
   padding: 2rem 7rem;
   border-radius: 0.4rem;
+}
+@media (max-width: 992px) {
+  .newsletter__button {
+    margin: 2rem 0;
+    width: 36rem;
+  }
+}
+@media (max-width: 552px) {
+  .newsletter__button {
+    width: 30rem;
+  }
+}
+
+.newsletter__input {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  width: 24rem;
+  height: 4.5rem;
+  padding: 0.5rem 2rem;
+  color: #5E81FE;
+  background-color: #EFEFF7;
+  border: 0.2rem solid #EFEFF7;
+  border-radius: 0.4rem;
+  outline: none;
+  transition: border 0.3s;
+}
+.newsletter__input:hover, .newsletter__input:focus {
+  border: 0.2rem solid #5E81FE;
+}
+@media (max-width: 992px) {
+  .newsletter__input {
+    width: 31.5rem;
+  }
+}
+@media (max-width: 552px) {
+  .newsletter__input {
+    width: 25.5rem;
+  }
 }
 
 .plan {

@@ -1,28 +1,92 @@
 .newsletter {
-	padding: 12rem 0;
+	padding: $base*3 0;
 	border-bottom: $border;
 	background-color: $color-background-additional;
+
+	@include media-max-tablet {
+		padding: $base*2 0;
+	}
 }
 
 .newsletter__wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@include media-max-tablet {
+		display: block;
+	}
 }
 
 .newsletter__text {
-	margin-right: 8rem;
+	margin-right: $base*2;
+
+	@include media-max-tablet {
+		text-align: center;
+		margin: 0;
+	}
 }
 
 .newsletter__description {
 	@include font($font-family-regular, $font-size-m, 2.7rem, $font-weight-regular);
-	margin-top: 2rem;
+	margin-top: calc($base/2);
 	width: 33rem;
 	color: $color-text;
+
+	@include media-max-tablet {
+		margin: calc($base/2) auto;
+		width: 30rem;
+	}
+}
+
+
+// ==================== Form ====================
+
+.newsletter__form {
+	@include media-max-tablet {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: $base;
+	}
 }
 
 .newsletter__button {
-	margin-left: 1.5rem;
-	padding: 2rem 7rem;
+	margin-left: calc($base/2);
+	padding: calc($base/2) $base*1.75;
 	border-radius: 0.4rem;
+
+	@include media-max-tablet {
+		margin: calc($base/2) 0;
+		width: 36rem;
+	}
+
+	@include media-min-tablet {
+		width: 30rem;
+	}
+}
+
+.newsletter__input {
+	@include font($font-family-primary, $font-size-l, 1.6rem, $font-weight-bold);
+	width: 24rem;
+	height: 4.5rem;
+	padding: calc($base/8) calc($base/2);
+	color: $color-primary;
+	background-color: #EFEFF7;
+	border: 0.2rem solid #EFEFF7;
+	border-radius: 0.4rem;
+	outline: none;
+	transition: border $transition-duration;
+
+	&:hover, &:focus {
+		border: 0.2rem solid $color-primary;
+	}
+
+	@include media-max-tablet {
+		width: 31.5rem;
+	}
+
+	@include media-min-tablet {
+		width: 25.5rem;
+	}
 }
