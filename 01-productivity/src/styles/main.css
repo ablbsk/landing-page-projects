@@ -6,6 +6,9 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
   cursor: default;
+}
+
+body {
   min-width: 375px;
 }
 
@@ -1857,7 +1860,6 @@ template {
   margin: 0 auto;
   padding-right: 2rem;
   padding-left: 2rem;
-  max-width: 1440px;
 }
 
 /*# sourceMappingURL=main.css.map */

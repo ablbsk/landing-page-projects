@@ -2,6 +2,9 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
   cursor: default;
+}
+
+body {
   min-width: $content-min-width;
 }
 
