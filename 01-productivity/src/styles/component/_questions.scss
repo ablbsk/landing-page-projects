@@ -1,5 +1,9 @@
 .questions {
 	width: 70rem;
+
+	@include media-average-tablet {
+		width: 100%;
+	}
 }
 
 .question {
@@ -21,11 +25,24 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 0 0 5rem;
+	padding: calc($base/2) 0 0 $base*1.25;
+
+	@include media-average-tablet {
+		display: block;
+	}
+
+	@include media-min-tablet {
+		padding-left: $base*0.75;
+	}
 }
 
 .question__description-text {
 	@include font($font-family-primary, $font-size-l, 2.7rem, $font-weight-medium);
 	letter-spacing: 0.03em;
 	width: 40rem;
+
+	@include media-average-tablet {
+		width: 100%;
+		margin-bottom: calc($base/2);
+	}
 }

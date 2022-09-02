@@ -1,6 +1,10 @@
 .faq {
-	padding: 17.5rem;
+	padding: $base*2.5;
 	border-bottom: $border;
+
+	@include media-average-tablet {
+		padding: $base*2 0;
+	}
 }
 
 .faq__wrapper {
@@ -10,5 +14,5 @@
 }
 
 .faq__header {
-	margin: 2rem auto 7rem auto;
+	margin: calc($base/2) auto $base*1.5 auto;
 }
