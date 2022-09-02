@@ -23,6 +23,8 @@
 
 	@include media-min-tablet {
 		text-align: center;
+		margin: 0;
+		padding: calc($base/1.5);
 	}
 }
 
@@ -79,6 +81,7 @@
 
 	@include media-average-tablet {
 		margin: $base 0;
+		text-align: left;
 	}
 }
 

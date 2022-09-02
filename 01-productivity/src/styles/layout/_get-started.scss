@@ -12,6 +12,10 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+
+	@include media-average-tablet {
+		padding: $base*2 0;
+	}
 }
 
 .get-started__header {

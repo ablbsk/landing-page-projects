@@ -2,6 +2,10 @@
 	padding: $base*2.5 0;
 	background-color: $color-background-additional;
 	border-bottom: $border;
+
+	@include media-average-tablet {
+		padding: $base*2 0;
+	}
 }
 
 .quotes__wrapper {

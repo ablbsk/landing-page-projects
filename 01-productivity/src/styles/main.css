@@ -6,6 +6,7 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
   cursor: default;
+  min-width: 375px;
 }
 
 .body--locked {
@@ -994,6 +995,8 @@ template {
 @media (max-width: 552px) {
   .slider__content {
     text-align: center;
+    margin: 0;
+    padding: 2.6666666667rem;
   }
 }
 
@@ -1052,6 +1055,7 @@ template {
 @media (max-width: 768px) {
   .slider__text-description {
     margin: 4rem 0;
+    text-align: left;
   }
 }
 
@@ -1102,11 +1106,6 @@ template {
 @media (max-width: 552px) {
   .blog {
     padding: 8rem 0;
-  }
-}
-@media (max-width: 414px) {
-  .blog {
-    padding: 4rem 0;
   }
 }
 
@@ -1182,7 +1181,7 @@ template {
 }
 @media (max-width: 414px) {
   .features {
-    padding: 12rem 0;
+    padding: 8rem 0;
   }
 }
 
@@ -1199,12 +1198,12 @@ template {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 8rem 0;
+    margin: 5rem 0;
   }
 }
 @media (max-width: 414px) {
   .features__container {
-    margin: 6rem 0;
+    margin: 4rem 0;
   }
 }
 
@@ -1227,7 +1226,7 @@ template {
 @media (max-width: 992px) {
   .feature {
     width: 18rem;
-    margin: 4rem;
+    margin: 3rem;
   }
 }
 @media (max-width: 768px) {
@@ -1246,6 +1245,12 @@ template {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 177%;
+}
+
+@media (max-width: 552px) {
+  .feature__title {
+    margin: 2rem 0;
+  }
 }
 
 .features__buttons {
@@ -1346,6 +1351,11 @@ template {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 768px) {
+  .get-started__wrapper {
+    padding: 8rem 0;
+  }
+}
 
 .get-started__header {
   margin-top: 1.7777777778rem;
@@ -1390,7 +1400,7 @@ template {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 320px;
+    width: 375px;
     padding-top: 2rem;
     position: fixed;
     top: 0;
@@ -1403,7 +1413,7 @@ template {
 }
 
 .header__content--opened {
-  width: 320px;
+  width: 375px;
   position: fixed;
   right: 0;
 }
@@ -1518,7 +1528,7 @@ template {
 }
 @media (max-width: 992px) {
   .plan {
-    padding: 12rem 0 8rem 0;
+    padding: 8rem 0;
   }
 }
 
@@ -1609,6 +1619,11 @@ template {
   padding: 10rem 0;
   background-color: #FCFDFF;
   border-bottom: 0.1rem solid #D8E3FE;
+}
+@media (max-width: 768px) {
+  .quotes {
+    padding: 8rem 0;
+  }
 }
 
 .quotes__wrapper {
@@ -1843,7 +1858,6 @@ template {
   padding-right: 2rem;
   padding-left: 2rem;
   max-width: 1440px;
-  min-width: 320px;
 }
 
 /*# sourceMappingURL=main.css.map */

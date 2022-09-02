@@ -9,7 +9,7 @@
 	background-size: cover;
 
 	@include media-max-mobile {
-		padding: $base*3 0;
+		padding: $base*2 0;
 	}
 }
 
@@ -25,11 +25,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: $base*2 0;
+		margin: $base*1.25 0;
 	}
 
 	@include media-max-mobile {
-		margin: $base*1.5 0;
+		margin: $base 0;
 	}
 }
 
@@ -53,7 +53,7 @@
 
 	@include media-max-tablet {
 		width: 18rem;
-		margin: $base;
+		margin: $base*0.75;
 	}
 
 	@include media-average-tablet {
@@ -69,6 +69,11 @@
 	@include font($font-family-regular, $font-size-s, 177%, $font-weight-regular);
 }
 
+.feature__title {
+	@include media-min-tablet {
+		margin: calc($base/2) 0;
+	}
+}
 
 // ==================== Features buttons ====================
 

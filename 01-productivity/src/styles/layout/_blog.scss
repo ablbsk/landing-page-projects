@@ -8,10 +8,6 @@
 	@include media-min-tablet {
 		padding: $base*2 0;
 	}
-
-	@include media-max-mobile {
-		padding: $base 0;
-	}
 }
 
 .blog__header {
