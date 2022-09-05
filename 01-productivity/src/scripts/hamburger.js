@@ -5,7 +5,7 @@ export default class Hamburger {
     this.menu = document.getElementById('menu')
     this.navigationList = document.getElementById('navigationList')
     this.socials = document.getElementById('socialList')
-    this.navigationLinks = document.querySelectorAll('.link')
+    this.navigationLinks = this.navigationList.childNodes
   }
 
   init() {
