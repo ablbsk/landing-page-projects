@@ -856,9 +856,9 @@ template {
   transition: 0.3s;
   margin: 0.25rem 1rem 0 0;
 }
-.icon--vector:hover {
-  background-image: url("../assets/icons/vector-hover.svg");
-  outline: none;
+
+.icon--vector-opened {
+  transform: rotate(-90deg);
 }
 
 .link {
@@ -901,51 +901,74 @@ template {
   }
 }
 
-.questions {
+.faq-questions {
   width: 70rem;
 }
 @media (max-width: 768px) {
-  .questions {
+  .faq-questions {
     width: 100%;
   }
 }
 
-.question {
+.faq-question {
   padding: 2rem;
   border-bottom: 0.1rem solid #D8E3FE;
   color: #8D96BD;
 }
 
-.question__title {
-  display: flex;
+.faq-question__title {
+  display: inline-flex;
   align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.faq-question__title:hover {
+  color: #495274;
+}
+.faq-question__title:hover .icon--vector {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../assets/icons/vector-hover.svg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.3s;
 }
 
-.question__title-text {
+.faq-question__title-text {
   font-family: "Quicksand", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2rem;
 }
 
-.question__description {
+.faq-question__description {
+  transition: opacity 0.3s ease-out;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.faq-question__description--opened {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: auto;
   padding: 2rem 0 0 5rem;
+  opacity: 1;
 }
 @media (max-width: 768px) {
-  .question__description {
+  .faq-question__description--opened {
     display: block;
   }
 }
 @media (max-width: 552px) {
-  .question__description {
+  .faq-question__description--opened {
     padding-left: 3rem;
   }
 }
 
-.question__description-text {
+.faq-question__description-text {
   font-family: "Quicksand", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
@@ -954,7 +977,7 @@ template {
   width: 40rem;
 }
 @media (max-width: 768px) {
-  .question__description-text {
+  .faq-question__description-text {
     width: 100%;
     margin-bottom: 2rem;
   }
