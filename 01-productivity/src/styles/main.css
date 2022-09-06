@@ -357,7 +357,7 @@ template {
   background-color: #D2E1FF;
   border: 0.1rem solid #D8E3FE;
   border-radius: 0.2rem;
-  cursor: pointer;
+  cursor: not-allowed;
   transition: background-color 0.3s;
 }
 .button:hover {

@@ -19,8 +19,6 @@ module.exports = (options) => {
 
   const createHash = (ext) => `[name].[contenthash].${ext}`
 
-  // MiniCssExtractPlugin.loader - add styles in new file
-  // style-loader - add styles in head tag in index.html
   const cssBuild = isProduction ? MiniCssExtractPlugin.loader : 'style-loader'
 
   const cssPostLoader = {
@@ -61,8 +59,8 @@ module.exports = (options) => {
 
   return {
     mode: isProduction ? 'production' : 'development',
-    context: path.resolve(__dirname, 'src'), // The base directory for resolving entry points and loaders from the configuration
-    devtool: isProduction ? false : 'source-map', // The point or points where to start the application bundling process
+    context: path.resolve(__dirname, 'src'),
+    devtool: isProduction ? false : 'source-map',
     devServer: {
       compress: true,
       hot: true,
@@ -73,22 +71,21 @@ module.exports = (options) => {
       main: path.resolve(__dirname, 'src/index.js')
     },
     output: {
-      assetModuleFilename: 'assets/[name][ext]', // create folder assets in dist
+      assetModuleFilename: 'assets/[name][ext]',
       clean: true,
       filename: isProduction ? createHash('js') : '[name].js',
-      path: path.resolve(__dirname, 'dist') // The output directory as an absolute path
+      path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-      extensions: ['.js', '.ts'] // ignore extensions in imports
+      extensions: ['.js', '.ts']
     },
     plugins: [new ESLintPlugin(eslintOptions), new MiniCssExtractPlugin(cssOptions), new HtmlWebpackPlugin(htmlOptions)],
     module: {
       rules: [
-        // Adds images when they used tag img in html
         {
           test: /\.html$/i,
           loader: 'html-loader'
-        }, // Adds images when they are used in CSS as a background
+        },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/inline'

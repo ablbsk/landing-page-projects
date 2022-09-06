@@ -1,13 +1,17 @@
-// ========== Abstract ==========
+// =========================  =========================
+// ===================== Abstract =====================
+
 @import "abstract/constants";
 @import "abstract/mixins";
 @import "abstract/placeholders";
 
-// ========== Base ==========
+// ======================= Base =======================
+
 @import "base/base";
 @import "base/normalize";
 
-// ========== Component ==========
+// ==================== Component =====================
+
 @import "component/buttons";
 @import "component/descriptions";
 @import "component/dots";
@@ -20,7 +24,8 @@
 @import "component/shadow";
 @import "component/socials";
 
-// ========== Layout ==========
+// ====================== Layout ======================
+
 @import "layout/customers";
 @import "layout/faq";
 @import "layout/features";

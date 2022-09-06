@@ -1,6 +1,7 @@
 $base: 4rem; // Base indent (margin & padding)
 
-// ========== Color ==========
+// ======================= Color =======================
+
 $color-primary: #5E81FE;
 $color-heading: #3D4F9F;
 $color-text: #8D96BD;
@@ -26,7 +27,8 @@ $color-lighten-percent: 5%;
 
 $color-shadow: #5f7bca99;
 
-// ========== Font ==========
+// ======================= Font =======================
+
 $font-family-regular: 'Roboto', sans-serif;
 $font-family-primary: 'Quicksand', sans-serif;
 
@@ -44,7 +46,8 @@ $font-size-xl: 2.4rem;
 $font-size-2xl: 3.6rem;
 $font-size-3xl: 4.8rem;
 
-// ========== Sizes ==========
+// ======================= Size =======================
+
 $content-max-width: 1440px;
 $content-min-width: 375px;
 
@@ -53,9 +56,11 @@ $tablet-min-width: 552px; // Tablet MIN Width
 $tablet-average-width: 768px; // Tablet AVERAGE Width
 $tablet-max-width: 992px; // Tablet MAX Width
 
-// ========== Transition ==========
+// ==================== Transition ====================
+
 $transition-duration: 0.3s;
 
-// ========== Border ==========
+// ====================== Border ======================
+
 $border: 0.1rem solid $color-border;
 $border-radius: 0.2rem;

@@ -1,4 +1,4 @@
-// ========== HEADER SIZES ==========
+// ======================= Size =======================
 
 .header-1-size {
 	@include font($font-family-primary, $font-size-3xl, 6rem, $font-weight-light);
@@ -28,10 +28,10 @@
 .header-6-size {
 	@include font($font-family-regular, $font-size-m, 2.5rem, $font-weight-bold);
 	@extend %header-color;
-	margin: 3rem 0;
+	margin: $base*0.75 0;
 }
 
-// ========== HEADER MODIFICATIONS ==========
+// =================== Modification ===================
 
 .header--uppercase {
 	text-transform: uppercase;

@@ -14,7 +14,7 @@
 	border-radius: 50%;
 }
 
-// ==================== Promo ====================
+// ====================== Promo =======================
 
 .icon--promo-play {
 	@include font($font-family-primary, $font-size-2l, 1.8rem, $font-weight-bold);
@@ -37,7 +37,7 @@
 }
 
 
-// ==================== Socials ====================
+// ====================== Social ======================
 
 @mixin social-icon($key) {
 	@include icon-background("../assets/icons/socials/", $key, 2rem);
@@ -60,7 +60,7 @@
 }
 
 
-// ==================== Customers ====================
+// ===================== Customer =====================
 
 @mixin customer-icon($key) {
 	@include icon-background("../assets/icons/customers/", $key, 13rem, 3rem);
@@ -87,7 +87,7 @@
 }
 
 
-// ==================== Features ====================
+// ====================== Feature =====================
 
 @mixin feature-icon($key) {
 	@include icon-background("../assets/icons/features/", $key, 3rem, 3rem, false);
@@ -130,7 +130,7 @@
 }
 
 
-// ==================== Stats ====================
+// ======================= Stat =======================
 
 .icon--rating {
 	@include icon-background("../assets/icons/stats/", "rating", 7rem, 7rem, false);
@@ -149,7 +149,7 @@
 }
 
 
-// ==================== FAQ ====================
+// ======================= FAQ ========================
 
 .icon--vector {
 	@include icon-background("../assets/icons/", "vector", 2rem, 2rem, false);

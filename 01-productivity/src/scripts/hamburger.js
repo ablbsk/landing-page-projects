@@ -30,7 +30,9 @@ export default class Hamburger {
 
     this.navigationLinks.forEach((element) => {
       element.addEventListener('click', () => {
-        arr.map((item) => toggleClass(item))
+        if (document.documentElement.clientWidth < 992) {
+          arr.map((item) => toggleClass(item))
+        }
       })
     })
   }
