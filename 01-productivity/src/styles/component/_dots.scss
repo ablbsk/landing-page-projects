@@ -4,12 +4,15 @@
 }
 
 .dot {
-	width: 0.8rem;
-	height: 0.8rem;
-	margin: 0 0.5rem;
+	width: 0.9rem;
+	height: 0.9rem;
+	margin: 0 calc($base/8);
 	background-color: $color-dot;
 	border-radius: 50%;
 	transition: background-color $transition-duration;
+}
+
+.dot--click {
 	cursor: pointer;
 
 	&:hover {

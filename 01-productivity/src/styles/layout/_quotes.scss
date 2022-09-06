@@ -41,11 +41,32 @@
 	margin-bottom: $base;
 }
 
+.quotes__content {
+	@include font($font-family-regular, $font-size-m, 2.7rem, $font-weight-regular);
+	width: 36rem;
+	color: $color-text;
+
+	@include media-min-tablet {
+		width: 24rem;
+	}
+
+	@include media-max-mobile {
+		width: auto;
+	}
+}
+
+.quotes__slider {
+	margin-left: $base;
+
+	@include media-max-tablet {
+		margin: 0 auto;
+	}
+}
 
 // ==================== Quote ====================
 
 .quote {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	padding: $base $base*1.5;
@@ -74,26 +95,8 @@
 	}
 }
 
-.quotes__content {
-	@include font($font-family-regular, $font-size-m, 2.7rem, $font-weight-regular);
-	width: 36rem;
-	color: $color-text;
-
-	@include media-min-tablet {
-		width: 24rem;
-	}
-
-	@include media-max-mobile {
-		width: auto;
-	}
-}
-
-.quotes__slider {
-	margin-left: $base;
-
-	@include media-max-tablet {
-		margin: 0 auto;
-	}
+.quote--active {
+	display: flex;
 }
 
 .quote__avatar {

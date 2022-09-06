@@ -148,21 +148,6 @@
 	}
 }
 
-// ==================== Slider ====================
-
-.icon--arrow {
-	@include icon-background("../assets/icons/", "arrow", 3rem);
-	transition: $transition-duration;
-
-	&.icon--arrow-left {
-		transform: rotate(180deg);
-	}
-
-	@include media-average-tablet {
-		display: none;
-	}
-}
-
 
 // ==================== FAQ ====================
 

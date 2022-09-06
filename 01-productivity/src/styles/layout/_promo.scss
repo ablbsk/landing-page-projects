@@ -21,15 +21,39 @@
 	text-align: center;
 
 	.promo__content-header {
-		margin-top: calc($base/2);
+		margin-top: calc($base / 2);
 	}
 }
 
 .promo__list {
-	margin: $base calc($base/2) calc($base/2) calc($base/2);
+	display: flex;
+	position: relative;
+	margin: $base calc($base / 2) calc($base / 2) calc($base / 2);
+}
+
+.promo__item {
+	display: none;
+}
+
+.promo__item--active {
+	display: block;
 }
 
 .promo__dots {
 	margin-top: auto;
 	margin-bottom: $base;
+}
+
+.promo__item {
+	animation-name: fade;
+	animation-duration: 0.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
 }
