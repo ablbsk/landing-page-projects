@@ -4,7 +4,7 @@
 
 ### Links
 
-[<img src="../assets/icons/view-demo.svg" title="Productivity — open project demo" alt="View Demo" height="50">](https://wism7.netlify.app)
+[<img src="../assets/icons/view-demo.svg" title="Productivity — open project demo" alt="View Demo" height="50">](https://01-productivity.netlify.app/)
 [<img src="../assets/icons/open-figma.svg" title="Productivity — open figma template" alt="Open figma" height="50">](https://www.figma.com/file/4R5xdVNZ47gMzQTX5jFaeT/Productivity?node-id=0%3A1)
 
 ### How to Install
