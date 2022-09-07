@@ -30,6 +30,7 @@
 	box-shadow: $shadow-value rgba($color-shadow, 0.8);
 	transition: box-shadow $transition-duration;
 	text-decoration: none;
+	cursor: not-allowed;
 
 	&:hover {
 		box-shadow: $shadow-value rgba($color-shadow, 0.6);

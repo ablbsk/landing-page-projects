@@ -597,6 +597,7 @@ template {
   box-shadow: 0 0 5rem rgba(95, 123, 202, 0.8);
   transition: box-shadow 0.3s;
   text-decoration: none;
+  cursor: not-allowed;
 }
 .icon--promo-play:hover {
   box-shadow: 0 0 5rem rgba(95, 123, 202, 0.6);
