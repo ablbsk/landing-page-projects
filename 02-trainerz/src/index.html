@@ -2,9 +2,321 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Trainerz — this is a template Figma file, turned into code using Anima" />
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
     <title>Trainerz</title>
   </head>
   <body>
-    <h1>Trainerz page</h1>
+    <div class="content">
+      <header class="header">
+        <a class="logo" href="#" aria-label="Trainerz — Logo">
+          <span class="logo__icon"></span>
+        </a>
+        <ul class="apps">
+          <li class="apps__item">
+            <a
+              class="apps__link"
+              href="https://play.google.com/store/games?hl=ru&gl=US"
+              aria-label="Trainerz apps — go to Google Play"
+            >
+              <img
+                class="apps__image"
+                src="./assets/icons/google-play.svg"
+                alt="Trainerz — go to install android app in Google Play"
+              />
+            </a>
+          </li>
+          <li class="apps__item">
+            <a
+              class="apps__link"
+              href="https://www.apple.com/ru/app-store/"
+              aria-label="Trainerz apps — go to App Store"
+            >
+              <img
+                class="apps__image"
+                src="./assets/icons/app-store.svg"
+                alt="Trainerz — go to install apple app in App Store"
+              />
+            </a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <section class="promo">
+          <div class="promo__content">
+            <h1 class="promo__header">Start to workout</h1>
+            <p class="promo__description">
+              This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
+            </p>
+            <button class="button">Get started</button>
+          </div>
+          <img class="promo__image" src="./assets/images/promo.png" alt="Image, where girl do fitness" />
+        </section>
+        <section class="brands">
+          <ul class="brands__list">
+            <ol class="brands__list-column">
+              <li class="brands__item">
+                <span class="icon icon--apple" aria-label="Apple"></span>
+              </li>
+              <li class="brands__item">
+                <span class="icon icon--nike" aria-label="Nike"></span>
+              </li>
+              <li class="brands__item">
+                <span class="icon icon--samsung" aria-label="Samsung"></span>
+              </li>
+            </ol>
+            <ol class="brands__list-column">
+              <li class="brands__item">
+                <span class="icon icon--google" aria-label="Google"></span>
+              </li>
+              <li class="brands__item">
+                <span class="icon icon--adidas" aria-label="Adidas"></span>
+              </li>
+              <li class="brands__item">
+                <span class="icon icon--amazon" aria-label="Amazon"></span>
+              </li>
+            </ol>
+          </ul>
+        </section>
+        <section class="features">
+          <div class="feature">
+            <img class="feature__image" src="./assets/images/features/feature-1.png" alt="Feature 1" />
+            <h2 class="feature__header">Feature 1</h2>
+            <p class="feature__description">
+              This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
+            </p>
+            <a class="feature__link" href="#">
+              <span class="feature__link-text">Read me</span>
+              <span class="feature__link-icon"></span>
+            </a>
+          </div>
+          <div class="feature">
+            <img class="feature__image" src="./assets/images/features/feature-2.png" alt="Feature 2" />
+            <h2 class="feature__header">Feature 2</h2>
+            <p class="feature__description">
+              This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
+            </p>
+            <a class="feature__link" href="#">
+              <span class="feature__link-text">Read me</span>
+              <span class="feature__link-icon"></span>
+            </a>
+          </div>
+          <div class="feature">
+            <img class="feature__image" src="./assets/images/features/feature-3.png" alt="Feature 3" />
+            <h2 class="feature__header">Feature 3</h2>
+            <p class="feature__description">
+              This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
+            </p>
+            <a class="feature__link" href="#">
+              <span class="feature__link-text">Read me</span>
+              <span class="feature__link-icon"></span>
+            </a>
+          </div>
+          <div class="feature">
+            <img class="feature__image" src="./assets/images/features/feature-4.png" alt="Feature 4" />
+            <h2 class="feature__header">Feature 4</h2>
+            <p class="feature__description">
+              This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
+            </p>
+            <a class="feature__link" href="#">
+              <span class="feature__link-text">Read me</span>
+              <span class="feature__link-icon"></span>
+            </a>
+          </div>
+        </section>
+        <section class="headline">
+          <img class="headline__image" src="./assets/images/headline.png" alt="Demonstrate our app" />
+          <div class="headline__content">
+            <h2 class="headline__header">Headline</h2>
+            <p class="headline__description">
+              This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
+            </p>
+            <button class="button">Try free</button>
+          </div>
+        </section>
+        <section class="clients">
+          <h2 class="clients__header">Clients</h2>
+          <div class="clients__container">
+            <div class="client">
+              <p class="client__opinion">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <div class="client__about">
+                <img class="client__avatar" src="./assets/images/clients/client-1.png" alt="Full name avatar" />
+                <div class="client__additional">
+                  <span class="client__name">Full name</span>
+                  <ul class="client__rating">
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="client">
+              <p class="client__opinion">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <div class="client__about">
+                <img class="client__avatar" src="./assets/images/clients/client-2.png" alt="Full name avatar" />
+                <div class="client__additional">
+                  <span class="client__name">Full name</span>
+                  <ul class="client__rating">
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="client">
+              <p class="client__opinion">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <div class="client__about">
+                <img class="client__avatar" src="./assets/images/clients/client-3.png" alt="Full name avatar" />
+                <div class="client__additional">
+                  <span class="client__name">Full name</span>
+                  <ul class="client__rating">
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                    <li class="client__rating-item">
+                      <img class="client__rating-cross" src="./assets/icons/star.svg" alt="Rating item" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="download">
+          <div class="download__content">
+            <h2 class="download__header">Try new classes</h2>
+            <p class="download__description">
+              This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
+            </p>
+            <span class="download__more">Learn More</span>
+            <ul class="apps">
+              <li class="apps__item">
+                <a
+                  class="apps__link"
+                  href="https://play.google.com/store/games?hl=ru&gl=US"
+                  aria-label="Trainerz apps — go to Google Play"
+                >
+                  <img
+                    class="apps__image"
+                    src="./assets/icons/google-play.svg"
+                    alt="Trainerz — go to install android app in Google Play"
+                  />
+                </a>
+              </li>
+              <li class="apps__item">
+                <a
+                  class="apps__link"
+                  href="https://www.apple.com/ru/app-store/"
+                  aria-label="Trainerz apps — go to App Store"
+                >
+                  <img
+                    class="apps__image"
+                    src="./assets/icons/app-store.svg"
+                    alt="Trainerz — go to install apple app in App Store"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img class="download__image" src="./assets/images/phone.png" alt="Mobile app screen" />
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__column">
+          <a class="logo" href="#" aria-label="Trainerz — Logo">
+            <span class="logo__icon"></span>
+          </a>
+          <div class="subscribe">
+            <p class="subscribe__title">Subscribe to our newsletter</p>
+            <form class="subscribe__form">
+              <input class="subscribe__input" type="email" placeholder="Enter your email" autocomplete="off" />
+              <button class="subscribe__button">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__column footer__column--right">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="#" aria-label="Discord link">
+                <span class="icon--discord"></span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="#" aria-label="Facebook link">
+                <span class="icon--facebook"></span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="#" aria-label="Dribbble link">
+                <span class="icon--dribbble"></span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="#" aria-label="Instagram link">
+                <span class="icon--instagram"></span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="#" aria-label="Behance link">
+                <span class="icon--behance"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="info__list">
+            <li class="info__item">
+              <a class="info__link" href="#">Privacy policy</a>
+            </li>
+            <li class="info__item">
+              <a class="info__link" href="#">Cookies policy</a>
+            </li>
+            <li class="info__item">
+              <a class="info__link" href="#">© Trainers 2022</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

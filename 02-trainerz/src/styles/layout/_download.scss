@@ -1,0 +1,45 @@
+.download {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: $base $base*2.25;
+	padding: $base*0.875 $base*2.25;
+	background-color: #F9FAFB;
+	border-radius: $border-radius-medium;
+
+	@include media-medium {
+		display: block;
+		margin: $base $base*0.875;
+		padding: $base*0.875 $base*1.25;
+	}
+}
+
+.download__content {
+	margin-right: $base*1.25;
+
+	@include media-medium {
+		max-width: 21rem;
+		margin: 0 auto;
+	}
+}
+
+.download__header {
+	@extend %header-3-size;
+}
+
+.download__description {
+	@extend %description-styles;
+	margin: $base*0.5 0 $base*0.75 0;
+}
+
+.download__more {
+	@extend %description-styles;
+}
+
+.download__image {
+	display: block;
+
+	@include media-medium {
+		margin: $base*1.25 auto 0 auto;
+	}
+}

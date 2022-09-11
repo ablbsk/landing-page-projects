@@ -1,0 +1,32 @@
+.subscribe__title {
+	@include font-styles($font-family-regular, normal, $font-weight-regular, $font-size-m, 2.4rem);
+	margin: $base*0.875 0 $base*0.125 0;
+	color: $color-text-light;
+}
+
+.subscribe__input {
+	@include font-styles($font-family-regular, normal, $font-weight-regular, $font-size-m, 2.4rem);
+		width: 16rem;
+	padding: $base*0.2 $base*1.75 $base*0.2 $base*0.4;
+	color: $color-input-text;
+	background-color: $color-input-background;
+	border: 1px solid $color-input-background;
+	border-radius: $border-radius-medium;
+	outline: none;
+
+	&:focus {
+		border: 1px solid $color-input-accent;
+	}
+}
+
+.subscribe__button {
+	@include font-styles($font-family-regular, normal, $font-weight-regular, $font-size-m, 2.4rem);
+	padding: $base*0.2;
+	position: relative;
+	color: $color-input-accent;
+	background-color: $color-input-background;
+	right: 6rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

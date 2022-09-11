@@ -1,0 +1,23 @@
+.clients {
+	padding: $base*1.5 $base*2.25;
+
+	@include media-small {
+		padding: $base*1.5 $base*0.75;
+	}
+}
+
+.clients__header {
+	@extend %header-2-size;
+	text-align: center;
+}
+
+.clients__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: $base*0.875;
+
+	@include media-small {
+		display: block;
+	}
+}

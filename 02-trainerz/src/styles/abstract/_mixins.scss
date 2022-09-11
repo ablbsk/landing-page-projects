@@ -1,0 +1,31 @@
+@mixin font-styles($family: $font-family-regular, $style: normal, $weight: $font-weight-regular, $size, $line-height) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin icon-styles($height, $width, $url) {
+  display: inline-block;
+  height: $height;
+  width: $width;
+  background-image: url($url);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+// ======================== MEDIA =========================
+
+@mixin media-medium {
+  @media (max-width: $media-medium-breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-small {
+  @media (max-width: $media-small-breakpoint) {
+    @content;
+  }
+}

@@ -1,0 +1,87 @@
+.brands {
+	padding: 0 $base*1.75;
+
+	@include media-medium {
+		padding: 0 $base*0.75;
+	}
+}
+
+.brands__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: $base*0.85 $base*0.5;
+	border-top: $section-border;
+	border-bottom: $section-border;
+	list-style: none;
+
+	@include media-small {
+		flex-direction: column;
+	}
+}
+
+.brands__list-column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+
+	& + & {
+		margin-left: $base;
+
+		@include media-medium {
+			margin-left: $base*0.75;
+		}
+
+		@include media-small {
+			margin-left: 0;
+			margin-top: $base*0.85
+		}
+	}
+}
+
+.brands__item {
+	transition: filter $duration-shot ease-out;
+
+	& + & {
+		margin-left: $base;
+
+		@include media-medium {
+			margin-left: $base*0.75;
+		}
+
+		@include media-small {
+			margin-left: $base;
+		}
+	}
+
+	&:hover {
+		filter: $filter-secondary;
+	}
+}
+
+// ========================= ICON =========================
+
+.icon--apple {
+	@include icon-styles(3rem, 2.5rem, "../assets/icons/brands/apple.svg")
+}
+
+.icon--nike {
+	@include icon-styles(1.8rem, 4.8rem, "../assets/icons/brands/nike.svg")
+}
+
+.icon--samsung {
+	@include icon-styles(1.1rem, 7.2rem, "../assets/icons/brands/samsung.svg")
+}
+
+.icon--google {
+	@include icon-styles(2.2rem, 6.7rem, "../assets/icons/brands/google.svg")
+}
+
+.icon--adidas {
+	@include icon-styles(2.8rem, 4rem, "../assets/icons/brands/adidas.svg")
+}
+
+.icon--amazon {
+	@include icon-styles(2.3rem, 7.5rem, "../assets/icons/brands/amazon.svg")
+}

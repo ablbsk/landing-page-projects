@@ -1,0 +1,44 @@
+.contacts__list {
+	display: flex;
+	list-style: none;
+
+	@include media-medium {
+		margin: $base*0.75 0;
+	}
+}
+
+.contacts__item {
+	& + & {
+		margin-left: $base*0.35;
+	}
+}
+
+.contacts__link {
+	transition: filter $duration-shot ease-out;
+
+	&:hover {
+		filter: $filter-secondary;
+	}
+}
+
+// ========================= ICON =========================
+
+.icon--discord {
+	@include icon-styles(3.6rem, 3.6rem, "../assets/icons/contacts/discord.svg")
+}
+
+.icon--facebook {
+	@include icon-styles(3.6rem, 3.6rem, "../assets/icons/contacts/facebook.svg")
+}
+
+.icon--dribbble {
+	@include icon-styles(3.6rem, 3.6rem, "../assets/icons/contacts/dribbble.svg")
+}
+
+.icon--instagram {
+	@include icon-styles(3.6rem, 3.6rem, "../assets/icons/contacts/instagram.svg")
+}
+
+.icon--behance {
+	@include icon-styles(3.6rem, 3.6rem, "../assets/icons/contacts/behance.svg")
+}

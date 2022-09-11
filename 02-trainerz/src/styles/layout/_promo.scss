@@ -1,0 +1,32 @@
+.promo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: $base*1.75 0;
+
+	@include media-medium {
+		flex-direction: column;
+		padding: $base*2.375 $base*0.75;
+	}
+}
+
+.promo__content {
+	margin-right: $base*1.25;
+	width: 31.5rem;
+
+	@include media-medium {
+		margin: 0 0 $base 0;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.promo__header {
+	@include font-styles($font-family-primary, normal, $font-weight-regular, $font-size-bxl, 6.5rem);
+	color: $color-secondary;
+}
+
+.promo__description {
+	@extend %description-styles;
+	margin: $base*0.375 0 $base*0.75 0;
+}

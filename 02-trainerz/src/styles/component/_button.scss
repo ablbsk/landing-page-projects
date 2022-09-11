@@ -1,0 +1,15 @@
+.button {
+	@include font-styles($font-family-regular, normal, $font-weight-regular, $font-size-m, 2.4rem);
+	width: 12rem;
+	height: 4rem;
+	color: $color-button-text;
+	background-color: $color-button-background;
+	border: none;
+	border-radius: $border-radius-medium;
+	cursor: pointer;
+	transition: background-color $duration-medium ease-out;
+
+	&:hover {
+		background-color: $color-button-background-hover;
+	}
+}

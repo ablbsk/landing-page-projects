@@ -1,0 +1,25 @@
+.info__list {
+	display: flex;
+	list-style: none;
+}
+
+.info__item {
+	& + & {
+		margin-left: $base*0.5;
+
+		@include media-small {
+			margin-left: $base*0.35;
+		}
+	}
+}
+
+.info__link {
+	@include font-styles($font-family-regular, normal, $font-weight-regular, $font-size-m, 2.4rem);
+	color: $color-link;
+	text-decoration: none;
+	transition: color $duration-shot ease-out;
+
+	&:hover {
+		color: $color-link-hover;
+	}
+}

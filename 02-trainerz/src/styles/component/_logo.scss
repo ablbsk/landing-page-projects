@@ -1,0 +1,12 @@
+.logo {
+	cursor: pointer;
+}
+
+.logo__icon {
+	@include icon-styles (1.8rem, 9rem, "../assets/images/logo.svg");
+	transition: filter $duration-shot ease-out;
+
+	&:hover {
+		filter: $filter-secondary;
+	}
+}
