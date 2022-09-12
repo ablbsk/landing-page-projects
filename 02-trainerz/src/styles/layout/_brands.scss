@@ -21,11 +21,6 @@
 }
 
 .brands__list-column {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-
 	& + & {
 		margin-left: $base;
 
@@ -38,6 +33,13 @@
 			margin-top: $base*0.85
 		}
 	}
+}
+
+.brands__sublist {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
 }
 
 .brands__item {

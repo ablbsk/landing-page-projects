@@ -753,12 +753,6 @@ template {
   }
 }
 
-.brands__list-column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
 .brands__list-column + .brands__list-column {
   margin-left: 4rem;
 }
@@ -772,6 +766,13 @@ template {
     margin-left: 0;
     margin-top: 3.4rem;
   }
+}
+
+.brands__sublist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
 .brands__item {
