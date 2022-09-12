@@ -10,12 +10,13 @@
 	}
 }
 
-.header__image {
+.headline__image {
 	width: 100%;
 	height: 100%;
 }
 
 .headline__content {
+	width: 21rem;
 	margin-left: $base*1.25;
 
 	@include media-medium {

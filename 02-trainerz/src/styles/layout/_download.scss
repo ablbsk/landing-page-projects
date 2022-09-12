@@ -15,10 +15,10 @@
 }
 
 .download__content {
+	width: 21rem;
 	margin-right: $base*1.25;
 
 	@include media-medium {
-		max-width: 21rem;
 		margin: 0 auto;
 	}
 }
@@ -36,10 +36,15 @@
 	@extend %description-styles;
 }
 
-.download__image {
-	display: block;
+.download__image-container {
+	text-align: center;
 
 	@include media-medium {
-		margin: $base*1.25 auto 0 auto;
+		margin-top: $base*1.25;
 	}
+}
+
+.download__image {
+	width: 14rem;
+	height: 100%;
 }

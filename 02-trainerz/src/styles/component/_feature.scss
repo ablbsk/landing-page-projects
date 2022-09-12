@@ -4,6 +4,11 @@
 	text-align: center;
 }
 
+.feature__image {
+	width: 12rem;
+	height: 12rem;
+}
+
 .feature__header {
 	@extend %header-3-size;
 	margin: $base*0.25 0 $base*0.5 0;
