@@ -13,6 +13,17 @@
 	@include media-small {
 		margin: $base*0.75;
 	}
+
+	&._animate {
+		transform: translate(0, 25%);
+		opacity: 0;
+	}
+
+	&._animate-show {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: all $duration*2 ease-out $duration*0.5;
+	}
 }
 
 .footer__column {

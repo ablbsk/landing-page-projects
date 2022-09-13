@@ -88,7 +88,7 @@ module.exports = (options) => {
         },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          type: 'asset/resource'
+          type: isProduction ? 'asset/resource' : 'asset/inline'
         },
         {
           test: /\.(woff|woff2|eot|ttf|otf)$/i,

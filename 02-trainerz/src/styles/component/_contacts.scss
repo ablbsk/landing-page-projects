@@ -14,7 +14,7 @@
 }
 
 .contacts__link {
-	transition: filter $duration-shot ease-out;
+	transition: filter $duration ease-out;
 
 	&:hover {
 		filter: $filter-secondary;

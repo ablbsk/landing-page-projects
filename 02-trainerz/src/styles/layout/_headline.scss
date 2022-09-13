@@ -8,6 +8,17 @@
 		flex-direction: column-reverse;
 		padding: $base*0.5 $base*0.75;
 	}
+
+	&._animate {
+		transform: translate(0, 15%);
+		opacity: 0;
+	}
+
+	&._animate-show {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: all $duration*2 ease-out $duration*0.5;
+	}
 }
 
 .headline__image {

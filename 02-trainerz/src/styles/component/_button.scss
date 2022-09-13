@@ -7,7 +7,7 @@
 	border: none;
 	border-radius: $border-radius-medium;
 	cursor: pointer;
-	transition: background-color $duration-medium ease-out;
+	transition: background-color $duration ease-out;
 
 	&:hover {
 		background-color: $color-button-background-hover;

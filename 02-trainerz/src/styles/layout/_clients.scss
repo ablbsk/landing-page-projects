@@ -4,6 +4,17 @@
 	@include media-small {
 		padding: $base*1.5 $base*0.75;
 	}
+
+	&._animate {
+		transform: scale(0.95);
+		opacity: 0;
+	}
+
+	&._animate-show {
+		opacity: 1;
+		transform: scale(1);
+		transition: all $duration*2.5 ease-out $duration;
+	}
 }
 
 .clients__header {

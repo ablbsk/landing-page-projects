@@ -18,6 +18,17 @@
 	@include media-small {
 		flex-direction: column;
 	}
+
+	&._animate {
+		transform: scale(0.95);
+		opacity: 0;
+	}
+
+	&._animate-show {
+		opacity: 1;
+		transform: scale(1);
+		transition: all $duration*1.5 ease-out $duration*2;
+	}
 }
 
 .brands__list-column {
@@ -43,7 +54,7 @@
 }
 
 .brands__item {
-	transition: filter $duration-shot ease-out;
+	transition: filter $duration ease-out;
 
 	& + & {
 		margin-left: $base;

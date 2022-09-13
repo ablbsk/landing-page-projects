@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="content">
-      <header class="header">
+      <header class="header _animate">
         <a class="logo" href="#" aria-label="Trainerz — Logo">
           <span class="logo__icon"></span>
         </a>
@@ -46,19 +46,23 @@
       </header>
       <main>
         <section class="promo">
-          <div class="promo__content">
+          <div class="promo__content _animate">
             <h1 class="promo__header">Start to workout</h1>
             <p class="promo__description">
               This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
             </p>
             <button class="button">Get started</button>
           </div>
-          <div class="promo__image-container">
-            <img class="promo__image" src="./assets/images/promo.webp" alt="Image, where girl do fitness" />
+          <div class="promo__image-container _animate">
+            <picture>
+              <source type="image/webp" srcset='assets/images/webp/promo.webp'>
+              <source type="image/png" srcset="./assets/images/promo.png">
+              <img class="promo__image" src="./assets/images/promo.png" alt="Image, where girl do fitness">
+            </picture>
           </div>
         </section>
         <section class="brands">
-          <ul class="brands__list">
+          <ul class="brands__list _animate">
             <li class="brands__list-column">
               <ul class="brands__sublist">
                 <li class="brands__item">
@@ -87,7 +91,7 @@
             </li>
           </ul>
         </section>
-        <section class="features">
+        <section class="features _animate">
           <div class="feature">
             <div class="feature__image-container">
               <img class="feature__image" src="./assets/images/features/feature-1.png" alt="Feature 1" />
@@ -141,9 +145,13 @@
             </a>
           </div>
         </section>
-        <section class="headline">
+        <section class="headline _animate">
           <div class="headline__image-container">
-            <img class="headline__image" src="./assets/images/headline.webp" alt="Demonstrate our app" />
+            <picture>
+              <source type="image/webp" srcset="assets/images/webp/headline.webp">
+              <source type="image/png" srcset="./assets/images/headline.png">
+              <img class="headline__image" src="./assets/images/headline.png" alt="Demonstrate our app">
+            </picture>
           </div>
           <div class="headline__content">
             <h2 class="headline__header">Headline</h2>
@@ -153,7 +161,7 @@
             <button class="button">Try free</button>
           </div>
         </section>
-        <section class="clients">
+        <section class="clients _animate">
           <h2 class="clients__header">Clients</h2>
           <div class="clients__container">
             <div class="client">
@@ -242,8 +250,8 @@
             </div>
           </div>
         </section>
-        <section class="download">
-          <div class="download__content">
+        <section class="download _animate">
+          <div class="download__content _animate">
             <h2 class="download__header">Try new classes</h2>
             <p class="download__description">
               This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
@@ -278,12 +286,16 @@
               </li>
             </ul>
           </div>
-          <div class="download__image-container">
-            <img class="download__image" src="./assets/images/phone.webp" alt="Mobile app screen" />
+          <div class="download__image-container _animate">
+            <picture>
+              <source type="image/webp" srcset="assets/images/webp/phone.webp">
+              <source type="image/png" srcset="./assets/images/phone.png">
+              <img class="download__image" src="./assets/images/phone.png" alt="Mobile app screen">
+            </picture>
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer _animate">
         <div class="footer__column">
           <a class="logo" href="#" aria-label="Trainerz — Logo">
             <span class="logo__icon"></span>

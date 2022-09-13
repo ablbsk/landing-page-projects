@@ -19,6 +19,17 @@
 		width: 100%;
 		text-align: center;
 	}
+
+	&._animate {
+		transform: translate(-10%, 0);
+		opacity: 0;
+	}
+
+	&._animate-show {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: all $duration*2 ease-out $duration;
+	}
 }
 
 .promo__header {
@@ -33,6 +44,17 @@
 
 .promo__image-container {
 	max-width: 27rem;
+
+	&._animate {
+		transform: translate(10%, 0);
+		opacity: 0;
+	}
+
+	&._animate-show {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: all $duration*2 ease-out $duration;
+	}
 }
 
 .promo__image {

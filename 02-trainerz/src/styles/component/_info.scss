@@ -17,7 +17,7 @@
 	@include font-styles($font-family-regular, normal, $font-weight-regular, $font-size-m, 2.4rem);
 	color: $color-link;
 	text-decoration: none;
-	transition: color $duration-shot ease-out;
+	transition: color $duration ease-out;
 
 	&:hover {
 		color: $color-link-hover;

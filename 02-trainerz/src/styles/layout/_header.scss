@@ -7,4 +7,15 @@
 	@include media-small {
 		padding: 0 $base*0.5;
 	}
+
+	&._animate {
+		transform: translate(0, 50%);
+		opacity: 0;
+	}
+
+	&._animate-show {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: all $duration*2 ease-out 0s;
+	}
 }

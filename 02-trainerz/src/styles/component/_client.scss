@@ -2,7 +2,7 @@
 	padding: $base*0.5;
 	background-color: #FBF9F3;
 	border: 2px solid #FBF9F3;
-	transition: border $duration-long;
+	transition: border $duration*2;
 
 	& + & {
 		margin-left: $base*0.5;
